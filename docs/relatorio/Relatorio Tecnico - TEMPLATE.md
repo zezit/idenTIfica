@@ -1,21 +1,20 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+**?** T!Find **?**
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Engenharia de Software
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+- Alexandre Bernardes Alves Fernandes
+- José Carlos Ferreira de Andrade
+- Jose Victor Mendes Dias
+- Lucas Henrique Orselino de Magalhães
+- Mellyssa Meireles dos Santos
+- Vinicius Reggiani Lima
 
 # Estrutura do Documento
 
@@ -121,7 +120,7 @@
 > **Links Úteis**:
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
+
 # Especificações do Projeto
 
 ......  COLOQUE AQUI O SEU TEXTO ......
