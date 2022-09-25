@@ -81,15 +81,11 @@ Nosso projeto foi idealizado utilizando as ferramentas Miro, Trello, Git e Githu
 
 ## Personas e Mapas de Empatia
 
-![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192165930-f53b3f5d-0cbf-4574-a570-d71002dbbd89.jpg)
-![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192165931-ef95a8f3-d989-4dec-ac6a-450b0737c25a.jpg)
-![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192165932-04e6fddb-deed-43ef-b667-2c6bddbf1c6f.jpg)
-![TIAW - Equipe 7 (1)](https://user-images.githubusercontent.com/113153014/192165933-eb61d800-2e28-4e9f-b1c9-4b9705c36b63.jpg)
+![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192166060-008829e9-138f-4665-96af-80f7a992ec5c.jpg)
+![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192166062-5c558ca2-9611-4877-a40f-1c152cc64ff0.jpg)
+![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192166064-ff9fb522-1f0a-4511-b431-a00f9dce0e81.jpg)
+![TIAW - Equipe 7](https://user-images.githubusercontent.com/113153014/192166065-bcf0d3df-7c39-4bb3-891d-84c25331f92a.jpg)
 
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
-> 
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
 
 
 ## Histórias de Usuários
