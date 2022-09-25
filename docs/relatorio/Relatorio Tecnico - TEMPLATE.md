@@ -188,32 +188,16 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 
 ## Divisão de Papéis
 
-Scrum master
+| Contribuinte  | Cargo  | Descrição de funções |
+|-------|-------------------------|----|
+| José Victor Mendes Dias |Scrum master | Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos | 
+|Mellyssa Meireles dos Santos | Product Owner | Apoio nas tarefas e soluçao de problemas | 
+| José Carlos ferreira de andrade | Equipe | Responsável pela documentação do projeto | 
+| Lucas Henrique Orselino de Magalhães | Equipe | Responsável pelos wireframes |
+| Vinicius Reggiani Lima | Equipe | Responsável pelo prototipo do site |
+| Alexandre Bernardes Alves Fernandes | Equipe | Responsável pelo prototipo do site |
 
-|Jose Victor Mendes Dias|
-|-----------|-------------------------|---------------|
-|Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos.|
 
-PO
-
-|Mellyssa Meireles dos Santos|
-|-----------|----------------------------------------|
-|Apoio nas tarefas e soluçao de problemas.|
-
-Equipe
-
-|José Carlos ferreira de andrade|
-|-----------|----------------------------------------|
-Responsável pela documentação do projeto.
-
-|Lucas Henrique Orselino de Magalhães.|
-|-----------|----------------------------------------|
-|Responsável pelos wireframes.|
-
-|Vinicius Reggiani Lima|
-|-----------|----------------------------------------|
-
-|Responsável pelo prototipo do site.|
 
 
 
