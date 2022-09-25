@@ -61,32 +61,15 @@ As áreas da tecnologia tem se tornado cada vez mais procuradas devido as divers
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Nosso objetivo consiste em criar um software que auxilie jovens e adultos na escolha do curso superior, analisando o perfil do usuário, comparando desde a grade curricular dos cursos de graduação. Nesse caso checar se ela condiz com as demandas do mercado de trabalho, se ela esta atualizada, qual sua modalidade, também comparando seu preço em média e a sua localização. Assim, tendo essas informações, e feito uma comparação com o perfil do usuário e mostrando qual curso se encaixa melhor ao perfil do usuário.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Fazer uma boa faculdade pesa bastante no currículo das pessoas e a escolha do curso ideal e algo bem difícil se a pessoal não tiver uma boa base para de espelhar. 
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Hoje a profissão na área de Informática é bastante valorizada, em especial porque há tecnologia vem se inovando com bastante frequência. Inclusive, a procura por profissionais  é muito alta, principalmente entre as empresas de TI (Tecnologia da Informação).
+
+Com a criação desse projeto, permitira ao usuário usar a interface que o auxilie a encontrar o curso superior, resumidamente ira tirar certas dívidas de qual curso que mais atenda seu perfil.
 
 ## Público-Alvo
 
