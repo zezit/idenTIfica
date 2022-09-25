@@ -177,42 +177,18 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## User Flow
 
-......  INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
-
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
-> 
-> ![Exemplo de UserFlow](images/userflow.jpg)
+![Untitled](https://user-images.githubusercontent.com/113153014/192166231-bc9290c3-7bf2-4ee3-8386-7daf6b4e07ca.jpg)
 
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Wireframe](images/wireframe-example.png)
-
+![unknown](https://user-images.githubusercontent.com/113153014/192166289-f6bc1091-2bc8-43fe-bf16-e03b65f495d3.png)
+![unknown (1)](https://user-images.githubusercontent.com/113153014/192166282-95365351-bbfe-48c5-9cf0-735e0b5feac5.png)
+![unknown (2)](https://user-images.githubusercontent.com/113153014/192166283-93eae3c9-044c-48ff-aa16-1c141bd51610.png)
+![unknown (3)](https://user-images.githubusercontent.com/113153014/192166285-0c740d42-1b5c-4df9-ad35-14123a29a8b6.png)
+![unknown (4)](https://user-images.githubusercontent.com/113153014/192166287-9d48979a-a8a8-4c2d-b659-7edaa3c88706.png)
+![unknown (5)](https://user-images.githubusercontent.com/113153014/192166288-c01db009-075c-491b-90a1-1852b3695e09.png)
 
 # Metodologia
 
