@@ -81,26 +81,11 @@ Nosso projeto foi idealizado utilizando as ferramentas Miro, Trello, Git e Githu
 
 ## Personas e Mapas de Empatia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192165930-f53b3f5d-0cbf-4574-a570-d71002dbbd89.jpg)
+![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192165931-ef95a8f3-d989-4dec-ac6a-450b0737c25a.jpg)
+![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192165932-04e6fddb-deed-43ef-b667-2c6bddbf1c6f.jpg)
+![TIAW - Equipe 7 (1)](https://user-images.githubusercontent.com/113153014/192165933-eb61d800-2e28-4e9f-b1c9-4b9705c36b63.jpg)
 
-
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
 > 
 > ![Exemplo de Persona](imaages/../images/persona.png)
 > 
