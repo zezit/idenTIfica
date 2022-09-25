@@ -69,61 +69,22 @@ Fazer uma boa faculdade pesa bastante no currículo das pessoas e a escolha do c
 
 Hoje a profissão na área de Informática é bastante valorizada, em especial porque há tecnologia vem se inovando com bastante frequência. Inclusive, a procura por profissionais  é muito alta, principalmente entre as empresas de TI (Tecnologia da Informação).
 
-Com a criação desse projeto, permitira ao usuário usar a interface que o auxilie a encontrar o curso superior, resumidamente ira tirar certas dívidas de qual curso que mais atenda seu perfil.
+Com a criação desse projeto, permitira ao usuário usar a interface que o auxilie a encontrar o curso superior e tirar certas dúvidas de qual curso que mais atenda seu perfil.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nosso público alvo não consiste em um nicho especifico de pessoas, afinal a área de TI é relativamente nova e está em crescimento, com o passar do tempo o mundo moderno pede mais proficionais na área então nosso trabalho é tanto para pessoas que estão no mercado de trabalho e buscam aprimoramento profissional ou  pessoas que estão iniciando suas carreiras agora.
 
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Nosso projeto foi idealizado utilizando as ferramentas Miro, Trello, Git e Github com o intuitio de se criar ambientes colaborativos em que poderiamos trabalhar em conjunto. assim como o Discord como meio de comunicação nas reuniões regulares.
 
 ## Personas e Mapas de Empatia
+![TIAW - Equipe 7 (1)](https://user-images.githubusercontent.com/113153014/192166126-f8e93aa6-9a18-4174-823d-192f9283e86c.jpg)
+![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192166127-fd1dd3fd-5178-4438-882c-e9dc08771179.jpg)
+![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192166128-23d55519-36d9-4e88-9c67-fc181f837770.jpg)
+![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192166129-b30f5d50-8cfd-4861-a953-c84332994a0b.jpg)
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que 
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja. 
-> 
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
-> 
-> 
-> **Exemplo de Persona**
-> 
-> ![Exemplo de Persona](imaages/../images/persona.png)
-> 
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
 
 
 ## Histórias de Usuários
@@ -148,43 +109,33 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário pesquise graduações | ALTA | 
+|RF-002| Deve ter um campo de busca para fácil acesso  |BAIXA |
+|RF-003| Deve mostrar informações sobre as graduações | MÉDIA |
+|RF-004| Deve conter informações claras e precisas   | MÉDIA |
+|RF-005| Permitir que usuário compare graduações  | BAIXA |
+|RF-006| Deve ter páginas quem tirem dúvidas do usuário  | BAIXA |
+|RF-007| Deve ter uma seção com depoimentos de profissionais da área  | BAIXA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um computador | MÉDIA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
+|RNF-003| a interface deve ser simples e intuitiva |  MÉDIA | 
+|RNF-004| taxa de ocorrência de falha igual ou inferior a 2/1.000 |  ALTA |
+|RNF-005| Probabilidade de falha durante fase operacional |  MÉDIA |
+|RNF-006| Monitorar tempo médio até a ocorrência de falha |  MÉDIA |
+|RNF-007| Consumir a menor quantidade de memória possível  |  MÉDIA |
+|RNF-008| Reiniciar o site pós falha em até 3 seg |  MÉDIA |
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-> 
-> **Links Úteis**:
-> 
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+
 
 
 ## Restrições
@@ -194,15 +145,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|02| Não pode ser desenvolvido em back back-end  |
+|03| Membros da equipe que só podem trabalhar fora do periodo de aulas  |
+|04| Cada membro deve trabalhar apenas nas tarefas atribuidas a si  |
+|05| Cada tarefa deve ser entregue dentro do prazo acordado  |
+|06| Não pode ser desenvolvido um módulo de banco de dados  |
+|07| Ao fim de cada tarefa o programa deve ser testado antes da entrega |
+|07| Caso algum integrante seja afastado por problemas de saúde a tarefa do mesmo deve ser dividida entre os demais membros  |
 
 
 # Projeto de Interface
@@ -216,42 +165,18 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## User Flow
 
-......  INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
-
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
-> 
-> ![Exemplo de UserFlow](images/userflow.jpg)
+![Untitled](https://user-images.githubusercontent.com/113153014/192166231-bc9290c3-7bf2-4ee3-8386-7daf6b4e07ca.jpg)
 
 
 ## Wireframes
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> 
-> **Exemplo**:
-> 
-> ![Exemplo de Wireframe](images/wireframe-example.png)
-
+![unknown](https://user-images.githubusercontent.com/113153014/192166289-f6bc1091-2bc8-43fe-bf16-e03b65f495d3.png)
+![unknown (1)](https://user-images.githubusercontent.com/113153014/192166282-95365351-bbfe-48c5-9cf0-735e0b5feac5.png)
+![unknown (2)](https://user-images.githubusercontent.com/113153014/192166283-93eae3c9-044c-48ff-aa16-1c141bd51610.png)
+![unknown (3)](https://user-images.githubusercontent.com/113153014/192166285-0c740d42-1b5c-4df9-ad35-14123a29a8b6.png)
+![unknown (4)](https://user-images.githubusercontent.com/113153014/192166287-9d48979a-a8a8-4c2d-b659-7edaa3c88706.png)
+![unknown (5)](https://user-images.githubusercontent.com/113153014/192166288-c01db009-075c-491b-90a1-1852b3695e09.png)
 
 # Metodologia
 
