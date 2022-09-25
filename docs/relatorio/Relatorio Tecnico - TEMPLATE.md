@@ -151,7 +151,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |05| Cada tarefa deve ser entregue dentro do prazo acordado  |
 |06| Não pode ser desenvolvido um módulo de banco de dados  |
 |07| Ao fim de cada tarefa o programa deve ser testado antes da entrega |
-|07| Caso algum integrante seja afastado por problemas de saúde a tarefa do mesmo deve ser dividida entre os demais membros  |
+|08| Caso algum integrante seja afastado por problemas de saúde a tarefa do mesmo deve ser dividida entre os demais membros  |
 
 
 # Projeto de Interface
@@ -180,33 +180,37 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Trello: Usado para organizar idéias e gerir o projeto.
+Miro: Usado para por as idéias em pratica e materializar todo o contexto.
+Figma: Usado em toda a etapa de wireframes e projeto.
+Github: Usado para dividir tarefas e centralizar toda a informação.
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
 
 ## Divisão de Papéis
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Scrum master
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Jose Victor Mendes Dias
+Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos.
+
+PO
+
+Mellyssa Meireles dos Santos
+Apoio nas tarefas e soluçao de problemas.
+
+Equipe
+
+José Carlos ferreira de andrade
+Responsável pela documentação do projeto.
+
+Lucas Henrique Orselino de Magalhães.
+Responsável pelos wireframes.
+
+Vinicius Reggiani Lima
+
+Responsável pelo prototipo do site.
+
+
 
 
 ## Ferramentas
@@ -215,10 +219,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro | (https://miro.com/app/board/uXjVPY9Ap-M=/) | 
+|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7 | 
+|Protótipo Interativo |  Figma | (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7) | 
 
 >
 > Liste as ferramentas empregadas no desenvolvimento do
