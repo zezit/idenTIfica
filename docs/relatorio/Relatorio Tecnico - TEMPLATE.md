@@ -1,21 +1,20 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+iden***TI***fica
 
 `CURSO` 
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Engenharia de Software
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+- Alexandre Bernardes Alves Fernandes
+- José Carlos Ferreira de Andrade
+- Jose Victor Mendes Dias
+- Lucas Henrique Orselino de Magalhães
+- Mellyssa Meireles dos Santos
+- Vinicius Reggiani Lima
 
 # Estrutura do Documento
 
@@ -56,23 +55,9 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Escolher uma profissão ou seguimento de carreira é uma necessidade determinante na vida das pessoas. Com o número de profissões e novas graduações crescendo exponencialmente nos últimos anos e o mercado de trabalho se torna cada vez mais competitivo e exigente, tomar essa decisão pode ser uma tarefa muito difícil. 
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+As áreas da tecnologia tem se tornado cada vez mais procuradas devido as diversas possibilidades de atuação no mercado e a falta de profissionais capacitados para ocuparam as vagas. Devido ao surgimento de novas possibilidades de carreiras e cursos nessa área, a escolha de um caminho para seguir pode ser ainda mais difícil. 
 
 ## Objetivos
 
@@ -121,7 +106,7 @@
 > **Links Úteis**:
 > - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 > - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
+
 # Especificações do Projeto
 
 ......  COLOQUE AQUI O SEU TEXTO ......
