@@ -118,6 +118,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |RF-003| Deve mostrar informações sobre as graduações | MÉDIA |
 |RF-004| Deve conter informações claras e precisas   | MÉDIA |
 |RF-005| Permitir que usuário compare graduações  | BAIXA |
+|RF-006| Deve ter páginas quem tirem dúvidas do usuário  | BAIXA |
+|RF-007| Deve ter uma seção com depoimentos de profissionais da área  | BAIXA |
+
 
 ### Requisitos não Funcionais
 
@@ -127,6 +130,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  ALTA | 
 |RNF-003| a interface deve ser simples e intuitiva |  MÉDIA | 
 |RNF-004| taxa de ocorrência de falha igual ou inferior a 2/1.000 |  ALTA |
+|RNF-005| Probabilidade de falha durante fase operacional |  MÉDIA |
+|RNF-006| Monitorar tempo médio até a ocorrência de falha |  MÉDIA |
+|RNF-007| Consumir a menor quantidade de memória possível  |  MÉDIA |
+|RNF-008| Reiniciar o site pós falha em até 3 seg |  MÉDIA |
+
+
 
 
 ## Restrições
@@ -136,15 +145,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|02| Não pode ser desenvolvido em back back-end  |
+|03| Membros da equipe que só podem trabalhar fora do periodo de aulas  |
+|04| Cada membro deve trabalhar apenas nas tarefas atribuidas a si  |
+|05| Cada tarefa deve ser entregue dentro do prazo acordado  |
+|06| Não pode ser desenvolvido um módulo de banco de dados  |
+|07| Ao fim de cada tarefa o programa deve ser testado antes da entrega |
+|07| Caso algum integrante seja afastado por problemas de saúde a tarefa do mesmo deve ser dividida entre os demais membros  |
 
 
 # Projeto de Interface
