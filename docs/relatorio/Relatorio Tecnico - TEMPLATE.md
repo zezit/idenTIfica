@@ -109,14 +109,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário pesquise graduações | ALTA | 
+|RF-002| Deve ter um campo de busca para fácil acesso  |BAIXA |
+|RF-003| Deve mostrar informações sobre as graduações | MÉDIA |
 
 
 ### Requisitos não Funcionais
