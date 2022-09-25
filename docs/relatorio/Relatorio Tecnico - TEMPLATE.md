@@ -190,25 +190,25 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 
 Scrum master
 
-Jose Victor Mendes Dias
-Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos.
+|Jose Victor Mendes Dias|
+|Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos.|
 
 PO
 
-Mellyssa Meireles dos Santos
-Apoio nas tarefas e soluçao de problemas.
+|Mellyssa Meireles dos Santos|
+|Apoio nas tarefas e soluçao de problemas.|
 
 Equipe
 
-José Carlos ferreira de andrade
+|José Carlos ferreira de andrade|
 Responsável pela documentação do projeto.
 
-Lucas Henrique Orselino de Magalhães.
-Responsável pelos wireframes.
+|Lucas Henrique Orselino de Magalhães.|
+|Responsável pelos wireframes.|
 
-Vinicius Reggiani Lima
+|Vinicius Reggiani Lima|
 
-Responsável pelo prototipo do site.
+|Responsável pelo prototipo do site.|
 
 
 
