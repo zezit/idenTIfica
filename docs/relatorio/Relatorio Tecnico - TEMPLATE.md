@@ -80,11 +80,10 @@ Nosso público alvo não consiste em um nicho especifico de pessoas, afinal a á
 Nosso projeto foi idealizado utilizando as ferramentas Miro, Trello, Git e Github com o intuitio de se criar ambientes colaborativos em que poderiamos trabalhar em conjunto. assim como o Discord como meio de comunicação nas reuniões regulares.
 
 ## Personas e Mapas de Empatia
-
-![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192166060-008829e9-138f-4665-96af-80f7a992ec5c.jpg)
-![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192166062-5c558ca2-9611-4877-a40f-1c152cc64ff0.jpg)
-![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192166064-ff9fb522-1f0a-4511-b431-a00f9dce0e81.jpg)
-![TIAW - Equipe 7](https://user-images.githubusercontent.com/113153014/192166065-bcf0d3df-7c39-4bb3-891d-84c25331f92a.jpg)
+![TIAW - Equipe 7 (1)](https://user-images.githubusercontent.com/113153014/192166126-f8e93aa6-9a18-4174-823d-192f9283e86c.jpg)
+![TIAW - Equipe 7 (4)](https://user-images.githubusercontent.com/113153014/192166127-fd1dd3fd-5178-4438-882c-e9dc08771179.jpg)
+![TIAW - Equipe 7 (3)](https://user-images.githubusercontent.com/113153014/192166128-23d55519-36d9-4e88-9c67-fc181f837770.jpg)
+![TIAW - Equipe 7 (2)](https://user-images.githubusercontent.com/113153014/192166129-b30f5d50-8cfd-4861-a953-c84332994a0b.jpg)
 
 
 
