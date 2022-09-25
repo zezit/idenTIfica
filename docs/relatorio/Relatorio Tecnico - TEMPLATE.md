@@ -69,34 +69,15 @@ Fazer uma boa faculdade pesa bastante no currículo das pessoas e a escolha do c
 
 Hoje a profissão na área de Informática é bastante valorizada, em especial porque há tecnologia vem se inovando com bastante frequência. Inclusive, a procura por profissionais  é muito alta, principalmente entre as empresas de TI (Tecnologia da Informação).
 
-Com a criação desse projeto, permitira ao usuário usar a interface que o auxilie a encontrar o curso superior, resumidamente ira tirar certas dívidas de qual curso que mais atenda seu perfil.
+Com a criação desse projeto, permitira ao usuário usar a interface que o auxilie a encontrar o curso superior e tirar certas dúvidas de qual curso que mais atenda seu perfil.
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nosso público alvo não consiste em um nicho especifico de pessoas, afinal a área de TI é relativamente nova e está em crescimento, com o passar do tempo o mundo moderno pede mais proficionais na área então nosso trabalho é tanto para pessoas que estão no mercado de trabalho e buscam aprimoramento profissional ou  pessoas que estão iniciando suas carreiras agora.
 
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Nosso projeto foi idealizado utilizando as ferramentas Miro, Trello, Git e Github com o intuitio de se criar ambientes colaborativos em que poderiamos trabalhar em conjunto. assim como o Discord como meio de comunicação nas reuniões regulares.
 
 ## Personas e Mapas de Empatia
 
