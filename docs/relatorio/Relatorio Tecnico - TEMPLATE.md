@@ -149,11 +149,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-Criamos uma interface simples e intuitiva com informações basicas sobre as graduações disponiveis no mercado, assim como uma ferramente que auxilie na escolha caso a pessoa nao consiga decidir facilmente
-> Apresente as principais interfaces da solução. Discuta como 
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
+Criamos uma interface simples e intuitiva com informações basicas sobre as graduações disponiveis no mercado, assim como uma ferramente que auxilia na escolha caso a pessoa não consiga decidir facilmente. 
 
 ## User Flow
 
@@ -202,12 +198,12 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 |-----------|-------------------------|---------------|
 |Processo de Design Thinking  | Miro | (https://miro.com/app/board/uXjVPY9Ap-M=/) | 
 |Repositório de código | GitHub | (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7) | 
-|Protótipo Interativo |  Figma | (https://www.figma.com/file/aIXiW6Uf9M1WIz4gpMNFsd/Protótipo---Escolha-de-cursos-TI?node-id=0) | 
+|Protótipo Interativo |  Figma | (https://www.figma.com/proto/aIXiW6Uf9M1WIz4gpMNFsd/Protótipo---Escolha-de-cursos-TI?node-id=1%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5) | 
 
 
 ## Controle de Versão
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Definimos primeiro o que seria feito através de um brainstorm, vimos as ferramentas que seriam usadas e o que seria possivel implementar no projeto. As funções foram definidas mediante as habilidades individuais dos integrantes do projeto, hospedamos o projeto nas plataformas do Github, Trello, e Figma onde os reponsáveis pelas funções trabalharam e no final o Scrum master ficou reponsavel por unificar toda a informação e enviar.
 
 > Discuta como a configuração do projeto foi feita na ferramenta de
 > versionamento escolhida. Exponha como a gerência de tags, merges,
