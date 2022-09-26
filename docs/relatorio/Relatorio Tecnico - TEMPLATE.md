@@ -159,7 +159,7 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Tela inicial
 
-![inicial](https://user-images.githubusercontent.com/113153014/192175699-d0b66361-ff37-4735-99fe-8318d0a4a1f1.png)
+![Telainicial](https://user-images.githubusercontent.com/113153014/192180871-bb2b7185-df3f-4552-a332-40ef433cbfef.jpg)
 
 #### Formulário
 
@@ -178,12 +178,12 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Universidades
 
-![universidades](https://user-images.githubusercontent.com/113153014/192175811-226e3eb6-a0c5-4800-a156-01548544add0.png)
+![Universidades](https://user-images.githubusercontent.com/113153014/192180882-201e1074-65b3-4bbb-9f55-898b694bec5f.jpg)
 
 
 #### Carreiras
+![Carreiras](https://user-images.githubusercontent.com/113153014/192180807-f6f9f0cc-5087-459c-88dd-d0c9d9697066.jpg)
 
-![carreiras](https://user-images.githubusercontent.com/113153014/192175804-cd8f954b-78e4-4a0d-9352-93651cc98e4b.png)
 
 #### Sobre nós
 
