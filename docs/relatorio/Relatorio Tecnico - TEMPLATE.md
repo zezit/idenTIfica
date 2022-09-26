@@ -182,7 +182,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Trello: Usado para organizar idéias e gerir o projeto.
 Miro: Usado para por as idéias em pratica e materializar todo o contexto.
-Figma: Usado em toda a etapa de wireframes e projeto.
+Figma: Usado em toda a etapa de wireframes e protótipo.
 Github: Usado para dividir tarefas e centralizar toda a informação.
 
 
@@ -208,32 +208,10 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro | (https://miro.com/app/board/uXjVPY9Ap-M=/) | 
-|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7 | 
-|Protótipo Interativo |  Figma | (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7) | 
+|Processo de Design Thinking  | Miro | (https://miro.com/app/board/uXjVPY9Ap-M=/) | 
+|Repositório de código | GitHub | (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7) | 
+|Protótipo Interativo |  Figma | (https://www.figma.com/file/aIXiW6Uf9M1WIz4gpMNFsd/Protótipo---Escolha-de-cursos-TI?node-id=0) | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> As ferramentas empregadas no projeto são:
-> 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
 
 ## Controle de Versão
 
