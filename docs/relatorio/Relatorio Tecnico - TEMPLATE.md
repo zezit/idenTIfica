@@ -149,8 +149,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-......  COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
-
+Criamos uma interface simples e intuitiva com informações basicas sobre as graduações disponiveis no mercado, assim como uma ferramente que auxilie na escolha caso a pessoa nao consiga decidir facilmente
 > Apresente as principais interfaces da solução. Discuta como 
 > foram elaboradas de forma a atender os requisitos funcionais, não
 > funcionais e histórias de usuário abordados nas [Especificações do
