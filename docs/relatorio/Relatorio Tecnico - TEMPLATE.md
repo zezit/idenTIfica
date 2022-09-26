@@ -188,8 +188,8 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 # Metodologia
 
-Trello: Usado para organizar idéias e gerir o projeto.
-Miro: Usado para por as idéias em pratica e materializar todo o contexto.
+Trello: Usado, inicialmente, para organizar ideias e gerir o projeto.
+Miro: Usado para por as ideias em pratica e materializar todo o contexto.
 Figma: Usado em toda a etapa de wireframes e protótipo.
 Github: Usado para dividir tarefas e centralizar toda a informação.
 
@@ -198,21 +198,15 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 
 | Contribuinte  | Cargo  | Descrição de funções |
 |-------|-------------------------|----|
-| José Victor Mendes Dias |Scrum master | Responsável por definir as tarefas de todos no grupo e quais metodologias usaremos | 
-|Mellyssa Meireles dos Santos | Product Owner | Apoio nas tarefas e soluçao de problemas | 
-| José Carlos ferreira de andrade | Equipe | Responsável pela documentação do projeto | 
-| Lucas Henrique Orselino de Magalhães | Equipe | Responsável pelos wireframes |
-| Vinicius Reggiani Lima | Equipe | Responsável pelo prototipo do site |
-| Alexandre Bernardes Alves Fernandes | Equipe | Responsável pelo prototipo do site |
-
-
-
-
+| José Victor Mendes Dias |Equipe | divisão de tarefas, protótipo, wireframe |
+|Mellyssa Meireles dos Santos | Equipe | apresentação, documentação |
+| José Carlos Ferreira de Andrade | Equipe | documentação, wireframe |
+| Lucas Henrique Orselino de Magalhães | Equipe | protótipo, documentação, wireframe |
+| Vinicius Reggiani Lima | Equipe | wireframe |
+| Alexandre Bernardes Alves Fernandes | Equipe | ------ |
 
 
 ## Ferramentas
-
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
 
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
@@ -223,7 +217,9 @@ Github: Usado para dividir tarefas e centralizar toda a informação.
 
 ## Controle de Versão
 
-Definimos primeiro o que seria feito através de um brainstorm, vimos as ferramentas que seriam usadas e o que seria possivel implementar no projeto. As funções foram definidas mediante as habilidades individuais dos integrantes do projeto, hospedamos o projeto nas plataformas do Github, Trello, e Figma onde os reponsáveis pelas funções trabalharam e no final o Scrum master ficou reponsavel por unificar toda a informação e enviar.
+Definimos primeiro o que seria feito através de um brainstorm, vimos as ferramentas que seriam usadas e o que seria possível implementar no projeto. As funções foram definidas mediante as habilidades individuais dos integrantes do projeto, hospedamos o projeto na plataforma Github para unificar todas as informações. A branch master é utilizada como a central do projeto e deve ser sempre a mais atualizada.  
+
+Inicialmente, cada membro do grupo deve organizar as suas tarefas em sua branch específica e após a finalização das atividades, fazer um merge com a branch master. Para fazer alterações na master, primeiro é necessário atualizar a sua branch com os commits da master, para não ocorrer erros.
 
 
 # **############## SPRINT 1 ACABA AQUI #############**
