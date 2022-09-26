@@ -153,7 +153,8 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 ## User Flow
 
-[Untitled.pdf](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-1-tcci-5308100-dev-arthur-rocha-guilherme-oliveira/files/9642146/Untitled.pdf)
+[userflow_page-0001](https://user-images.githubusercontent.com/113153014/192181620-100e1f43-d0cf-4345-97e1-27c5126d1cb8.jpg)
+
 
 ## Wireframes
 
