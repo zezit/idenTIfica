@@ -168,7 +168,12 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Graduações #1
 
-![sobre os cursos](https://user-images.githubusercontent.com/113153014/192175810-b2bb409e-0a25-4278-ac0d-6bc1b4994669.png)
+![Cursos1](https://user-images.githubusercontent.com/113153014/192180602-650eab79-3c2a-4717-83b3-c6a785819fa3.jpg)
+
+
+#### Graduações #1
+
+![Cursos2](https://user-images.githubusercontent.com/113153014/192180606-b2654a8d-3389-4775-bf18-ef95cce11d7a.jpg)
 
 
 #### Universidades
