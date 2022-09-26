@@ -163,28 +163,28 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Formulário
 
-![Formulário](./images\Formulário.jpg)
+![Formulário](./images/form.jpg)
 
 #### Graduações #1
 
-![Sobre os Cursos Pag.1](./images\Sobre os Cursos Pag.1.jpg)
+![Sobre os Cursos Pag.1](./images/Cursos1.jpg)
 
 
 #### Graduações #2
 
-![Sobre os Cursos Pag.2](./images\Sobre os Cursos Pag.2.jpg)
+![Sobre os Cursos Pag.2](./images/Cursos2.jpg)
 
 #### Universidades
 
-![Sobre as Universidades](./images\Sobre as Universidades.jpg)
+![Sobre as Universidades](./images/Universidades.jpg)
 
 #### Carreiras
 
-![Carreiras](./images\Carreiras.jpg)
+![Carreiras](./images/Carreiras.jpg)
 
 #### Sobre nós
 
-![Sobre nós](./images\Sobre nós.jpg)
+![Sobre nós](./images/about.jpg)
 
 # Metodologia
 
