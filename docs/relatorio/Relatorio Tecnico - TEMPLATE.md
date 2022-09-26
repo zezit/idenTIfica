@@ -158,13 +158,34 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 ## Wireframes
 
+#### Tela inicial
 
-![unknown](https://user-images.githubusercontent.com/113153014/192166289-f6bc1091-2bc8-43fe-bf16-e03b65f495d3.png)
-![unknown (1)](https://user-images.githubusercontent.com/113153014/192166282-95365351-bbfe-48c5-9cf0-735e0b5feac5.png)
-![unknown (2)](https://user-images.githubusercontent.com/113153014/192166283-93eae3c9-044c-48ff-aa16-1c141bd51610.png)
-![unknown (3)](https://user-images.githubusercontent.com/113153014/192166285-0c740d42-1b5c-4df9-ad35-14123a29a8b6.png)
-![unknown (4)](https://user-images.githubusercontent.com/113153014/192166287-9d48979a-a8a8-4c2d-b659-7edaa3c88706.png)
-![unknown (5)](https://user-images.githubusercontent.com/113153014/192166288-c01db009-075c-491b-90a1-1852b3695e09.png)
+![Tela inicial](C:\Users\Vi\Downloads\Tela inicial.jpg)
+
+#### Formulário
+
+![Formulário](C:\Users\Vi\Downloads\Formulário.jpg)
+
+#### Graduações #1
+
+![Sobre os Cursos Pag.1](C:\Users\Vi\Downloads\Sobre os Cursos Pag.1.jpg)
+
+
+#### Graduações #2
+
+![Sobre os Cursos Pag.2](C:\Users\Vi\Downloads\Sobre os Cursos Pag.2.jpg)
+
+#### Universidades
+
+![Sobre as Universidades](C:\Users\Vi\Downloads\Sobre as Universidades.jpg)
+
+#### Carreiras
+
+![Carreiras](C:\Users\Vi\Downloads\Carreiras.jpg)
+
+#### Sobre nós
+
+![Sobre nós](C:\Users\Vi\Downloads\Sobre nós.jpg)
 
 # Metodologia
 
