@@ -159,28 +159,26 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Tela inicial
 
-![Tela inicial](./images/Telainicial.jpg)
+![inicial](https://user-images.githubusercontent.com/113153014/192175699-d0b66361-ff37-4735-99fe-8318d0a4a1f1.png)
 
 #### Formulário
 
-![Formulário](./images/form.jpg)
+![formulario](https://user-images.githubusercontent.com/113153014/192175806-12904c09-13de-45f1-9c10-4560e062a5d4.png)
+
 
 #### Graduações #1
 
-![Sobre os Cursos Pag.1](./images/Cursos1.jpg)
+![sobre os cursos](https://user-images.githubusercontent.com/113153014/192175810-b2bb409e-0a25-4278-ac0d-6bc1b4994669.png)
 
-
-#### Graduações #2
-
-![Sobre os Cursos Pag.2](./images/Cursos2.jpg)
 
 #### Universidades
 
-![Sobre as Universidades](./images/Universidades.jpg)
+![universidades](https://user-images.githubusercontent.com/113153014/192175811-226e3eb6-a0c5-4800-a156-01548544add0.png)
+
 
 #### Carreiras
 
-![Carreiras](./images/Carreiras.jpg)
+![carreiras](https://user-images.githubusercontent.com/113153014/192175804-cd8f954b-78e4-4a0d-9352-93651cc98e4b.png)
 
 #### Sobre nós
 
