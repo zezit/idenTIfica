@@ -159,32 +159,32 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Tela inicial
 
-![Tela inicial](C:\Users\Vi\Downloads\Tela inicial.jpg)
+![Tela inicial](./images/Telainicial.jpg)
 
 #### Formulário
 
-![Formulário](C:\Users\Vi\Downloads\Formulário.jpg)
+![Formulário](./images\Formulário.jpg)
 
 #### Graduações #1
 
-![Sobre os Cursos Pag.1](C:\Users\Vi\Downloads\Sobre os Cursos Pag.1.jpg)
+![Sobre os Cursos Pag.1](./images\Sobre os Cursos Pag.1.jpg)
 
 
 #### Graduações #2
 
-![Sobre os Cursos Pag.2](C:\Users\Vi\Downloads\Sobre os Cursos Pag.2.jpg)
+![Sobre os Cursos Pag.2](./images\Sobre os Cursos Pag.2.jpg)
 
 #### Universidades
 
-![Sobre as Universidades](C:\Users\Vi\Downloads\Sobre as Universidades.jpg)
+![Sobre as Universidades](./images\Sobre as Universidades.jpg)
 
 #### Carreiras
 
-![Carreiras](C:\Users\Vi\Downloads\Carreiras.jpg)
+![Carreiras](./images\Carreiras.jpg)
 
 #### Sobre nós
 
-![Sobre nós](C:\Users\Vi\Downloads\Sobre nós.jpg)
+![Sobre nós](./images\Sobre nós.jpg)
 
 # Metodologia
 
