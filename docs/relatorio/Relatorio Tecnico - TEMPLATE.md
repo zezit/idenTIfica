@@ -164,7 +164,7 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 #### Formulário
 
-![formulario](https://user-images.githubusercontent.com/113153014/192175806-12904c09-13de-45f1-9c10-4560e062a5d4.png)
+![formulario](./images/form.jpg))
 
 
 #### Graduações #1
