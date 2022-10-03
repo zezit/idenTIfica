@@ -192,10 +192,7 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 # Metodologia
 
-Trello: Usado, inicialmente, para organizar ideias e gerir o projeto.
-Miro: Usado para por as ideias em pratica e materializar todo o contexto.
-Figma: Usado em toda a etapa de wireframes e protótipo.
-Github: Usado para dividir tarefas e centralizar toda a informação.
+usamos as metodologias Kamban, getting things done e scrum.
 
 
 ## Divisão de Papéis
