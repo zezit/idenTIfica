@@ -10,10 +10,8 @@ function onclickMenuMobile() {
 /* Esconde todos itens da barra para mostrar apenas o input de pesquisa */
 function onclickSearchMobile() {
     var logo = document.getElementsByClassName("logo-container");
-    // console.log(logo[0].classList);
     logo[0].classList.remove("show");
     logo[0].classList.add("hide");
-    // console.log(logo[0].classList);
 
     var options = document.getElementsByClassName("search-button-mobile");
     options[0].classList.remove("show");
@@ -23,15 +21,13 @@ function onclickSearchMobile() {
     options[0].classList.add("hide");
 
     var searchMobile = document.getElementsByClassName("mob-search-form");
-    // console.log(searchMobile[0].classList);
     searchMobile[0].classList.remove("hide");
     searchMobile[0].classList.add("show");
-    // console.log(searchMobile[0].classList);
 }
 
 window.addEventListener(
     "resize",
-    function (event) {
+    function () {
         var searchMobile = document.getElementsByClassName("mob-search-form");
         var options = document.getElementsByClassName("search-button-mobile");
         if (window.screen.width >= 1024) {
@@ -55,12 +51,16 @@ window.addEventListener(
             options[0].classList.remove("hide");
             options[0].classList.add("show");
 
-            options[0].classList.remove("hide");
-            options[0].classList.add("show");
-
             options = document.getElementsByClassName("menu-mobile-icon");
             options[0].classList.remove("hide");
             options[0].classList.add("show");
+
+            // document
+            //     .getElementsByClassName("side-options-mobile")[0]
+            //     .classList.remove("hide");
+            // document
+            //     .getElementsByClassName("side-options-mobile")[0]
+            //     .classList.add("show");
         }
     },
     true
