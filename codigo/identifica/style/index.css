@@ -1,0 +1,125 @@
+:root {
+    /* Cores padrões do sistema */
+    --dark-blue: #2e3146;
+    --dark-saturated-blue: #242f9b;
+    --light-blue: #646fd4;
+}
+
+* {
+    font-family: "Montserrat", “Arial”, “sans-serif”;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/**** header ****/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--dark-blue);
+    padding: 0 86px;
+}
+
+.logo-container{
+    display: flex;
+}
+
+.logo-container img {
+    width: 160px;
+    height: 47px;
+    filter: invert(100%);
+}
+
+.side-options {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.options--container {
+    margin-right: 60px;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li {
+    margin-right: 24px;
+}
+
+.menu li a:link,
+.menu li a:visited,
+.menu li a:active {
+    color: white;
+}
+
+.menu li a:hover {
+    color: rgb(216, 212, 212);
+}
+
+.form-link {
+    background-color: var(--light-blue);
+    border-radius: 4px;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dbdffd;
+    border: 1px solid #787b9a;
+    width: 300px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.search-input{
+    border-radius: 4px;
+    width: 268px;
+    background-color: transparent;
+    border: none;
+    padding: 0 8px;
+}
+
+.search-input:focus{
+    color: #000;
+    outline: transparent;
+    caret-color: var(--dark-blue);
+}
+
+.search-input:enabled{
+    color: #000;
+    -webkit-appearance: none !important;
+}
+
+.button--search-bar {
+    border: none;
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+.button--search-bar img {
+    width: 18px;
+}
+
+.button--search-bar:hover{
+    cursor: pointer;
+}
