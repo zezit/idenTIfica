@@ -44,10 +44,6 @@ nav {
     filter: invert(100%);
 }
 
-.side-options-mobile {
-    /* display: none; */
-}
-
 /*! mobile only */
 .search-button-mobile {
     margin-right: 20px;
