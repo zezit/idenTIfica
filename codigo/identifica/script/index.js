@@ -35,26 +35,25 @@ window.addEventListener(
                 .getElementsByClassName("logo-container")[0]
                 .classList.add("show");
 
-            // options[0].classList.remove("show");
-            // options[0].classList.add("hide");
-
-            // options = document.getElementsByClassName("menu-mobile-icon");
-            // options[0].classList.remove("show");
-            // options[0].classList.add("hide");
-
-            // options[0].classList.remove("show");
-            // options[0].classList.add("hide");
-
             searchMobile[0].classList.remove("show");
             searchMobile[0].classList.add("hide");
+
+            // esconde menu mobile caso estiver aberto
+            document
+                .getElementsByClassName("options--container-mobile")[0]
+                .classList.remove("show");
+            document
+                .getElementsByClassName("options--container-mobile")[0]
+                .classList.add("hide");
+
+            // esconde 2 opções do mobile
+            document
+                .getElementsByClassName("side-options-mobile")[0]
+                .classList.remove("show");
+            document
+                .getElementsByClassName("side-options-mobile")[0]
+                .classList.add("hide");
         } else {
-            // options[0].classList.remove("hide");
-            // options[0].classList.add("show");
-
-            // options = document.getElementsByClassName("menu-mobile-icon");
-            // options[0].classList.remove("hide");
-            // options[0].classList.add("show");
-
             document
                 .getElementsByClassName("side-options-mobile")[0]
                 .classList.remove("hide");

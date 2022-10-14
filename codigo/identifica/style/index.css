@@ -20,7 +20,7 @@ a:link {
 }
 
 /**** header ****/
-.container--header {
+header {
     display: block;
 }
 
@@ -257,6 +257,12 @@ nav {
 
     .side-options-mobile {
         display: flex;
+    }
+
+    nav {
+        min-width: 350px;
+        padding: 20px;
+        justify-content: space-between;
     }
 }
 
