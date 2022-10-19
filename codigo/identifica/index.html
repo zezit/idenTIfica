@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>idenTIfica</title>
+
+    <!-- link to local style -->
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <nav>
+        <a class="logo-container" href="#">
+          <img src="imagens/idenTIfica.svg" alt="logo-nav" />
+        </a>
+
+        <div class="side-options">
+          <div class="options--container">
+            <ul class="menu">
+              <li class="form-link">
+                <a href=""> Realizar Teste</a>
+              </li>
+              <li><a href=""> Graduações</a></li>
+              <li>
+                <a href="./universidades/universidade.html"> Universidades</a>
+              </li>
+              <li><a href=""> Carreiras</a></li>
+              <li><a href=""> Sobre</a></li>
+            </ul>
+          </div>
+          <form class="search-form" role="search">
+            <button class="clear-button--search-bar" type="reset">
+              <img src="imagens/close_search_bar.svg" alt="clear-icon" />
+            </button>
+            <input class="search-input" placeholder="Pesquisar" />
+            <button class="button--search-bar" type="submit">
+              <img src="imagens/search-icon.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+        <!-- mobile two options -->
+        <div class="side-options-mobile hide">
+          <a
+            onclick="onclickSearchMobile()"
+            href="#"
+            class="search-button-mobile"
+          >
+            <img src="imagens/search-mob.svg" alt="search button" />
+          </a>
+          <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+            <img src="imagens/menu.svg" alt="menu icon" />
+          </a>
+        </div>
+        <!-- mobile search bar -->
+        <form class="mob-search-form hide" role="search">
+          <button
+            class="mob-clear-button--search-bar"
+            type="reset"
+            onclick="hideMobileSearch()"
+          >
+            <img src="imagens/close_search_bar.svg" alt="clear-icon" />
+          </button>
+          <input class="mob-search-input" placeholder="Pesquisar" />
+          <button class="mob-button--search-bar" type="submit">
+            <img src="imagens/search-icon.svg" alt="search-icon" />
+          </button>
+        </form>
+      </nav>
+      <!-- mobile menu -->
+      <div class="options--container-mobile">
+        <ul class="menu-mobile">
+          <li class="form-link-mobile">
+            <a href=""> Realizar Teste</a>
+          </li>
+          <li><a href=""> Graduações</a></li>
+          <li>
+            <a href="./universidades/universidade.html"> Universidades</a>
+          </li>
+          <li><a href=""> Carreiras</a></li>
+          <li><a href=""> Sobre</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Aqui irão as páginas -->
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
