@@ -63,6 +63,8 @@ nav {
 
 /*! mobile only */
 .options--container-mobile {
+    position: absolute;
+    right: 0;
     display: none;
     justify-content: flex-end;
 }

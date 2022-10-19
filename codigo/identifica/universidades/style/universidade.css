@@ -1,95 +1,104 @@
 @import "../../style/index.css";
 
 .uni--containers {
-    padding: 0 148px;
+  padding: 0 148px;
 }
 
 .poster-univ {
-    margin-top: 110px;
-    display: grid;
-    grid-template-columns: auto auto;
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .univ-image img {
-    margin-right: 135px;
-    max-width: 470px;
+  margin-right: 135px;
+  max-width: 470px;
 }
 
 .nome-univ {
-    font-size: 32px;
-    font-weight: 600;
-    color: var(--dark-saturated-blue);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--dark-saturated-blue);
 }
 
 .name-univ-top {
-    display: none;
+  display: none;
 }
 
 .desc-univ {
-    color: black;
-    line-height: 26px;
-    font-size: 20;
-    max-width: 670px;
-    margin: 10px 0 20px 0;
-    font-weight: 300;
-    text-align: justify;
+  color: black;
+  line-height: 26px;
+  font-size: 20;
+  max-width: 670px;
+  margin: 10px 0 20px 0;
+  font-weight: 300;
+  text-align: justify;
 }
 
 .ruf-univ {
-    text-align: center;
-    width: 670px;
-    height: 81px;
-    border-collapse: collapse;
+  text-align: center;
+  width: 670px;
+  height: 81px;
+  border-collapse: collapse;
 }
 
 .ruf-univ td {
-    border: 1px solid #2e3146;
-    font-weight: 500;
-    font-size: 16px;
+  border: 1px solid #2e3146;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .ruf-titles td {
-    color: var(--dark-saturated-blue);
+  color: var(--dark-saturated-blue);
 }
 
 .ruf-value td {
-    color: black;
+  color: black;
 }
 
 .cursos-univ {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 5% 30%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 5% 30%;
 }
 
 .cursos-univ p {
-    margin-left: 5px;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
 }
 
 /*** responsividade ***/
 @media (max-width: 1440px) {
-    .poster-univ {
-        justify-items: center;
-        grid-template-columns: auto;
-    }
-    .univ-image img {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+  .univ-image img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 
-    .name-univ-top {
-        display: flex !important;
-        margin-bottom: 20px;
-        font-size: 2.5em;
-        justify-content: space-around;
-    }
-    .nome-univ {
-        display: none;
-    }
-    .uni--containers {
-        padding: 0 50px;
-    }
+  .uni--containers {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .poster-univ {
+    justify-items: center;
+    grid-template-columns: auto;
+  }
+  .name-univ-top {
+    display: flex !important;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    justify-content: space-around;
+  }
+  .nome-univ {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .univ-image img {
+    width: calc(750px - 5%);
+  }
 }
