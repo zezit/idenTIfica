@@ -17,69 +17,123 @@
   </head>
   <body>
     <!-- Barra de navegação -->
-    <header>
-      <nav>
-        <a class="logo-container" href="#">
-          <img src="imagens/idenTIfica.svg" alt="logo-nav" />
-        </a>
+    <section class="body-content">
+      <header>
+        <nav>
+          <a class="logo-container" href="#">
+            <img src="imagens/idenTIfica.svg" alt="logo-nav" width="160" />
+          </a>
 
-        <div class="side-options">
-          <div class="options--container">
-            <ul class="menu">
-              <li class="form-link">
-                <a href=""> Realizar Teste</a>
-              </li>
-              <li><a href=""> Graduações</a></li>
-              <li>
-                <a href="./universidades/universidade.html"> Universidades</a>
-              </li>
-              <li><a href=""> Carreiras</a></li>
-              <li><a href=""> Sobre</a></li>
-            </ul>
+          <div class="side-options">
+            <div class="options--container">
+              <ul class="menu">
+                <li class="form-link">
+                  <a href=""> Realizar Teste</a>
+                </li>
+                <li><a href=""> Graduações</a></li>
+                <li>
+                  <a href="./universidades/universidade.html"> Universidades</a>
+                </li>
+                <li><a href=""> Carreiras</a></li>
+                <li><a href=""> Sobre</a></li>
+              </ul>
+            </div>
+            <form class="search-form" role="search">
+              <button class="clear-button--search-bar" type="reset">
+                <img src="imagens/close_search_bar.svg" alt="clear-icon" />
+              </button>
+              <input class="search-input" placeholder="Pesquisar" />
+              <button class="button--search-bar" type="submit">
+                <img src="imagens/search-icon.svg" alt="search-icon" />
+              </button>
+            </form>
           </div>
-          <form class="search-form" role="search">
-            <button class="clear-button--search-bar" type="reset">
+          <!-- mobile two options -->
+          <div class="side-options-mobile hide">
+            <a
+              onclick="onclickSearchMobile()"
+              href="#"
+              class="search-button-mobile"
+            >
+              <img src="imagens/search-mob.svg" alt="search button" />
+            </a>
+            <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+              <img src="imagens/menu.svg" alt="menu icon" />
+            </a>
+          </div>
+          <!-- mobile search bar -->
+          <form class="mob-search-form hide" role="search">
+            <button
+              class="mob-clear-button--search-bar"
+              type="reset"
+              onclick="hideMobileSearch()"
+            >
               <img src="imagens/close_search_bar.svg" alt="clear-icon" />
             </button>
-            <input class="search-input" placeholder="Pesquisar" />
-            <button class="button--search-bar" type="submit">
+            <input class="mob-search-input" placeholder="Pesquisar" />
+            <button class="mob-button--search-bar" type="submit">
               <img src="imagens/search-icon.svg" alt="search-icon" />
             </button>
           </form>
+        </nav>
+        <!-- mobile menu -->
+        <div class="options--container-mobile">
+          <ul class="menu-mobile">
+            <li class="form-link-mobile">
+              <a href=""> Realizar Teste</a>
+            </li>
+            <li><a href=""> Graduações</a></li>
+            <li>
+              <a href="./universidades/universidade.html"> Universidades</a>
+            </li>
+            <li><a href=""> Carreiras</a></li>
+            <li><a href=""> Sobre</a></li>
+          </ul>
         </div>
-        <!-- mobile two options -->
-        <div class="side-options-mobile hide">
-          <a
-            onclick="onclickSearchMobile()"
-            href="#"
-            class="search-button-mobile"
-          >
-            <img src="imagens/search-mob.svg" alt="search button" />
-          </a>
-          <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
-            <img src="imagens/menu.svg" alt="menu icon" />
-          </a>
+      </header>
+
+      <!-- Aqui irão as páginas -->
+
+      <!-- Aqui termina as páginas -->
+
+      <!-- Card para acessar o formulário -->
+      <div class="card--form">
+        <h2 class="card--form-title">
+          Ainda com dúvidas sobre qual curso escolher?
+        </h2>
+        <div class="card--form-descricao-container">
+          <p class="card--form-descricao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            vitae ipsum sit amet sem elementum mollis. Ut consectetur massa
+            nibh, a commodo nibh congue eget. Proin tincidunt nisi tortor, nec
+          </p>
         </div>
-        <!-- mobile search bar -->
-        <form class="mob-search-form hide" role="search">
-          <button
-            class="mob-clear-button--search-bar"
-            type="reset"
-            onclick="hideMobileSearch()"
+        <form action="#" class="card-form-email">
+          <input
+            type="email"
+            name=""
+            class="card-form-email-input"
+            placeholder="Insira seu email"
+          />
+          <a href="#"
+            ><button class="card-form-email-button" type="submit">
+              Realizar Teste
+            </button></a
           >
-            <img src="imagens/close_search_bar.svg" alt="clear-icon" />
-          </button>
-          <input class="mob-search-input" placeholder="Pesquisar" />
-          <button class="mob-button--search-bar" type="submit">
-            <img src="imagens/search-icon.svg" alt="search-icon" />
-          </button>
         </form>
-      </nav>
-      <!-- mobile menu -->
-      <div class="options--container-mobile">
-        <ul class="menu-mobile">
-          <li class="form-link-mobile">
-            <a href=""> Realizar Teste</a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer--logo-container">
+        <img src="imagens/idenTIfica-blue.svg" alt="logo-nav" width="160" />
+      </div>
+      <div class="footer--menu-container">
+        <ul class="footer--menu">
+          <li><a href=""> Home</a></li>
+          <li class="footer--form-link">
+            <a href="">Realizar Teste</a>
           </li>
           <li><a href=""> Graduações</a></li>
           <li>
@@ -88,12 +142,33 @@
           <li><a href=""> Carreiras</a></li>
           <li><a href=""> Sobre</a></li>
         </ul>
+
+        <div class="footer--menu-grid">
+          <ul class="footer-menu-grid-left">
+            <li><a href=""> Home</a></li>
+            <li class="footer--form-link">
+              <a href="">Realizar Teste</a>
+            </li>
+            <li><a href=""> Graduações</a></li>
+          </ul>
+          <ul class="footer-menu-grid-right">
+            <li>
+              <a href="./universidades/universidade.html"> Universidades</a>
+            </li>
+            <li><a href=""> Carreiras</a></li>
+            <li><a href=""> Sobre</a></li>
+          </ul>
+        </div>
       </div>
-    </header>
-    <!-- Aqui irão as páginas -->
-    <footer>
-        
+      <br />
+      <div class="footer--puc-link">
+        <a href="https://www.pucminas.br/">
+          <img src="imagens/puc-logo.svg" alt="puc-logo" />
+          <span>PUC Minas</span>
+        </a>
+      </div>
     </footer>
+
     <script src="script/index.js"></script>
   </body>
 </html>
