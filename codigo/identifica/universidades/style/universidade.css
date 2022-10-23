@@ -4,15 +4,31 @@
   padding: 0 148px;
 }
 
+.page-title {
+  color: #2e3146;
+  font-size: 2.3em;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
 .poster-univ {
-  margin-top: 110px;
+  /* margin-top: 110px; */
   display: grid;
   grid-template-columns: auto auto;
+  margin-bottom: 150px;
+}
+
+.univ-image {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .univ-image img {
-  margin-right: 135px;
-  max-width: 470px;
+  margin-right: 0;
+  width: 470px;
 }
 
 .nome-univ {
@@ -42,10 +58,59 @@
   border-collapse: collapse;
 }
 
-.ruf-univ td {
+.mobile-ruf-univ {
+  text-align: center;
+  display: none;
+  justify-content: center;
+}
+
+.ruf-vertical {
+  margin-top: 25px;
+}
+
+.ruf-vertical,
+.ruf-titles-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.ruf-univ td,
+.ruf-vertical td {
   border: 1px solid #2e3146;
   font-weight: 500;
   font-size: 16px;
+}
+
+.ruf-vertical tr {
+  margin-bottom: 50px;
+}
+
+.ruf-vertical tr:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.ruf-vertical td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 222px;
+  height: 45px;
+}
+
+.ruf-vertical td {
+  color: black;
+}
+
+.ruf-vertical td:nth-child(2) {
+  border-top: none;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ruf-vertical td:nth-child(1) {
+  color: var(--dark-saturated-blue);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .ruf-titles td {
@@ -82,9 +147,14 @@
 }
 
 @media (max-width: 1300px) {
+  .page-title {
+    margin-bottom: 20px;
+  }
+  
   .poster-univ {
     justify-items: center;
     grid-template-columns: auto;
+    margin-bottom: 50px;
   }
   .name-univ-top {
     display: flex !important;
@@ -98,7 +168,36 @@
 }
 
 @media (max-width: 750px) {
+  .ruf-univ {
+    display: none;
+  }
+
+  .mobile-ruf-univ {
+    display: flex;
+  }
+
+  .poster-univ {
+    margin-top: 0;
+  }
+
+  .nome-univ {
+    margin-top: 47px;
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+
+  .uni--containers {
+    padding: 0 5%;
+  }
+
   .univ-image img {
-    width: calc(750px - 5%);
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cursos-univ {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
   }
 }
