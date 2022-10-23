@@ -351,6 +351,7 @@ footer {
 }
 
 .footer--puc-link a {
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin-top: 21px;

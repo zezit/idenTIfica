@@ -5,6 +5,7 @@
 }
 
 .page-title {
+  user-select: none;
   color: #2e3146;
   font-size: 2.3em;
   display: flex;
@@ -21,6 +22,7 @@
 }
 
 .univ-image {
+  user-select: none;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -150,7 +152,7 @@
   .page-title {
     margin-bottom: 20px;
   }
-  
+
   .poster-univ {
     justify-items: center;
     grid-template-columns: auto;

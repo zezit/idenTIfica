@@ -15,7 +15,7 @@ function initPage() {
           <img src="${element.image}" alt="image universidade"/>
         </div>
         <div class="right-desc">
-          <a rel="noopener noreferrer" class="nome-univ" target="_blank" href="https://www.pucminas.br">PUC Minas</a>
+          <a rel="noopener noreferrer" class="nome-univ" target="_blank" href="${element.link}">${element.nome}</a>
           <p class="desc-univ">
             ${element.descricao}
           </p>
