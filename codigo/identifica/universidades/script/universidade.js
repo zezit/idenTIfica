@@ -2,11 +2,14 @@ import data from "../data/dados.js";
 
 const container = document.querySelector(".uni--containers");
 
+var cards = 0;
+
 document.addEventListener("DOMContentLoaded", initPage(), false);
 
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
   data.forEach((element) => {
+    cards++;
     const newUniv = document.createElement("div");
 
     newUniv.innerHTML = `
@@ -16,6 +19,10 @@ function initPage() {
         </div>
         <div class="right-desc">
           <a rel="noopener noreferrer" class="nome-univ" target="_blank" href="${element.link}">${element.nome}</a>
+          <div class="top-univ-cursos">
+            <img src="../imagens/univ.svg" alt="universidade vector"/>
+            <p>${element.cursos} cursos ofertados</p>
+          </div>
           <p class="desc-univ">
             ${element.descricao}
           </p>
@@ -48,13 +55,21 @@ function initPage() {
                 </tr>
               </table>
           </div>
+
+          <div class="link--ver-mais">
+            <a href="#">Ver mais...</a>
+          </div>
+
           <div class="cursos-univ">
             <img src="../imagens/univ.svg" alt="universidade vector"/>
             <p>${element.cursos} cursos ofertados</p>
           </div>
         </div>
+
+        
     `;
     newUniv.classList.add("poster-univ");
+
     container.appendChild(newUniv);
   });
 }

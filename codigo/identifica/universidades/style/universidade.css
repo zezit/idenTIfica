@@ -4,6 +4,15 @@
   padding: 0 148px;
 }
 
+.link--ver-mais {
+  display: none;
+}
+
+.uni--containers-separator,
+.top-univ-cursos {
+  display: none !important;
+}
+
 .page-title {
   user-select: none;
   color: #2e3146;
@@ -123,13 +132,15 @@
   color: black;
 }
 
-.cursos-univ {
+.cursos-univ,
+.top-univ-cursos {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 5% 30%;
 }
 
-.cursos-univ p {
+.cursos-univ p,
+.top-univ-cursos p {
   margin-left: 5px;
   font-weight: 500;
   font-size: 16px;
@@ -170,21 +181,58 @@
 }
 
 @media (max-width: 750px) {
-  .ruf-univ {
-    display: none;
+  .link--ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
   }
 
-  .mobile-ruf-univ {
-    display: flex;
+  .link--ver-mais a {
+    font-size: 18px;
+    color: var(--dark-saturated-blue);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .page-title {
+    margin: 48px 0;
+  }
+
+  .uni--containers-separator {
+    display: block !important;
+    margin: 50px 26px;
+    border-bottom: 1px solid var(--dark-saturated-blue);
+    opacity: 0.5;
+  }
+
+  .top-univ-cursos {
+    margin-top: 0;
+    display: flex !important;
   }
 
   .poster-univ {
-    margin-top: 0;
+    padding: 0 5px;
+    border: 0.4px solid black;
+    border-radius: 4px;
+    margin-bottom: 17px;
   }
 
-  .nome-univ {
-    margin-top: 47px;
-    margin-bottom: 50px;
+  .ruf-univ,
+  .cursos-univ {
+    display: none !important;
+  }
+
+  .mobile-ruf-univ {
+    /* TODO teste de remoção */
+    /* display: flex; */
+  }
+
+  .nome-univ,
+  .name-univ-top {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    margin-top: 4px;
     font-weight: 700;
   }
 
@@ -193,12 +241,14 @@
   }
 
   .univ-image img {
+    display: none; /* TODO teste de remoção */
     width: 100%;
     margin-bottom: 30px;
   }
 
-  .cursos-univ {
-    margin-top: 35px;
+  .cursos-univ,
+  .top-univ-cursos {
+    font-size: 20px;
     display: flex;
     justify-content: center;
   }

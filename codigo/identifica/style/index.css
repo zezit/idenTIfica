@@ -305,8 +305,8 @@ nav {
 
 /* footer style */
 footer {
-  position: relative;
-  bottom: 0;
+  /* position: relative; */
+  /* bottom: 0; */
   width: 100%;
   user-select: none;
   background-color: var(--light-grey);
@@ -482,7 +482,7 @@ footer {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 750px) {
   .card--form {
     padding: 14px;
   }
@@ -493,7 +493,7 @@ footer {
   }
 
   .card--form-descricao {
-    margin: 5px 0;
+    margin: 14px 0;
     font-size: 12px;
     font-weight: 400;
   }
