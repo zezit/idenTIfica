@@ -11,8 +11,8 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
-  color: #dbdffd;
   box-sizing: border-box;
+  color: var(--dark-saturated-blue);
 }
 
 /**** header ****/
@@ -24,6 +24,10 @@ header {
   width: 100%;
   background-color: var(--dark-blue);
   padding: 0 86px;
+}
+
+header a {
+  color: #dbdffd;
 }
 
 header a:hover {
@@ -43,10 +47,134 @@ header a:hover {
 /**** main ****/
 main {
   display: block;
-  background-color: var(--dark-blue);
   width: 100%;
+  margin: auto;
+  width: 100%;
+  padding: 0 78px;
 }
 
 .container--up {
+  margin: auto;
   display: flex;
+  align-items: center;
+}
+
+.container--title {
+  margin-right: 65px;
+}
+
+.container--image img {
+  width: 100%;
+  min-width: 150px;
+}
+
+.container--opt ul {
+  border: 0.5px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: fit-content;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.container--opt ul li {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+}
+
+.opt--selected-initial {
+  background-color: #e8eaf3;
+  border-right: 0.5px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+}
+
+.opt--selected-center {
+  background-color: #e8eaf3;
+  border-right: 0.5px solid var(--dark-saturated-blue);
+  border-left: 0.5px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+}
+
+.opt--selected-end {
+  background-color: #e8eaf3;
+  border-left: 0.5px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+}
+
+.container--conteudo {
+  margin-top: 65px;
+}
+
+.container--conteudo-list {
+  width: 100%;
+  border: 0.4px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+}
+
+.container--conteudo-list li {
+  border-bottom: 0.4px solid var(--dark-saturated-blue); /* TODO remover bottom border ultima li */
+  padding: 13px 27px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.container--conteudo-list li div {
+  display: flex;
+  align-items: center;
+}
+
+.container--conteudo-list li:nth-child(1) {
+  justify-content: space-between;
+}
+
+.title--content {
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 19px;
+}
+
+.text--content {
+  font-size: 1.2em;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-start;
+  color: black;
+}
+.buttons--content {
+  display: flex;
+  justify-content: end;
+}
+.buttons--content button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  padding: 6px;
+}
+
+.buttons--content button:nth-child(1) {
+  margin-right: 25px;
+  background-color: #6cb552 !important;
+}
+
+.buttons--content button:nth-child(2) {
+  background-color: #b55252 !important;
+}
+
+.list--inside{
 }
