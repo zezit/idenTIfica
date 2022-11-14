@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>idenTIfica | Crud</title>
+
+    <!-- link to local style -->
+    <link rel="stylesheet" href="style/crud-index.css" />
+    <link rel="stylesheet" href="style/edit-content.css" />
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <div>
+        <a href="./crud-index.html" class="back--initial">
+          <img src="../identifica/imagens/left-arrow.svg" alt="" />
+        </a>
+        <a class="logo-container" href="#">
+          <img src="../identifica/imagens/idenTIfica.svg" alt="logo-nav" />
+        </a>
+      </div>
+
+      <a href="../identifica/index.html">Sair</a>
+    </header>
+
+    <main>
+      <h1 class="page--title">UNIVERSIDADES</h1>
+      <section>
+        <form action="#">
+          <label
+            >Nome:<input
+              type="text"
+              name="title-universidade"
+              id="title-universidade"
+          /></label>
+          <label
+            >Link:<input
+              type="url"
+              name="link-universidade"
+              id="link-universidade"
+          /></label>
+          <label
+            >Descrição:
+            <textarea id="descricao-universidade" name="descricao-universidade">
+            </textarea>
+          </label>
+          <div class="line1-numbers">
+            <label
+              >Ensino:
+              <input
+                type="number"
+                name="ensino-universidade"
+                id="ensino-universidade"
+            /></label>
+
+            <label
+              >Mercado:
+              <input
+                type="number"
+                name="mercado-universidade"
+                id="mercado-universidade"
+            /></label>
+          </div>
+
+          <div class="line2-numbers">
+            <label
+              >Pesquisa:
+              <input
+                type="number"
+                name="pesquisa-universidade"
+                id="pesquisa-universidade"
+            /></label>
+
+            <label>
+              Número de cursos:
+              <input
+                type="number"
+                name="cursos-universidade"
+                id="cursos-universidade"
+            /></label>
+          </div>
+        </form>
+        <div class="buttons--content">
+          <a href="./edit-content.html">UPDATE</a>
+          <button>DELETE</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

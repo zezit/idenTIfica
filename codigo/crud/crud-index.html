@@ -37,33 +37,27 @@
         </div>
         <div class="container--opt">
           <ul>
-            <li class="opt--selected-initial">Tela Inicial</li>
-            <li>Formulário</li>
-            <li>Graduações</li>
-            <li>Universidades</li>
+            <li id="1" class="opt--selected-initial opt-selected">
+              Tela Inicial
+            </li>
+            <li id="2">Formulário</li>
+            <li id="3">Graduações</li>
+            <li id="4">Universidades</li>
           </ul>
         </div>
       </div>
 
       <div class="container--conteudo">
-        <ul class="container--conteudo-list">
-          <li>
-            <div class="list--inside">
-              <div>
-                <span class="title--content">PUC MINAS</span>
-                <span class="text--content"
-                  >Lorem ipsum dolor sit amet sed sea justo sed ad at
-                  sanctus...</span
-                >
-              </div>
-              <div class="buttons--content">
-                <button>UPDATE</button>
-                <button>DELETE</button>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <ul class="container--conteudo-list"></ul>
+        <div class="button-addnew">
+          <p>Adicionar novo item</p>
+          <button onclick="addNewItem()">
+            <img src="../identifica/imagens/plus.svg" />
+          </button>
+        </div>
       </div>
     </main>
+
+    <script src="./script/crud-index.js"></script>
   </body>
 </html>
