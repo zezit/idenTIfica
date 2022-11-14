@@ -128,8 +128,8 @@ function addNewItem() {
               <span class="text--content">Insira uma descrição</span>
           </div>
           <div class="buttons--content">
-              <a href="./edit-content.html">UPDATE</a>
-              <button>DELETE</button>
+              <a href="./edit-content.html">ATUALIZAR</a>
+              <button>DELETAR</button>
           </div>
       </div>
   `;

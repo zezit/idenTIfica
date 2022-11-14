@@ -58,12 +58,23 @@ section form textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 13px 18px;
 }
 
-section form label input,
-section form label textarea {
-  position: absolute;
-  left: 20%;
+input,
+textarea {
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 section form label textarea {
@@ -72,8 +83,58 @@ section form label textarea {
   min-height: 40%;
 }
 
-.line1-numbers{
+.campo-title,
+.campo-link,
+.campo-image {
+  width: 47%;
   display: flex;
-  width: 100%;
-  background-color: aqua;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.campo-title input,
+.campo-link input,
+.campo-image input {
+  width: 66%;
+}
+
+.campo-desc {
+  height: 339px;
+  width: 81%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.campo-desc textarea {
+  resize: vertical;
+  height: fit-content;
+  width: 80%;
+  height: 100%;
+}
+
+.line1-numbers,
+.line2-numbers {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 67%;
+}
+
+.line1-numbers input,
+.line2-numbers input {
+  width: 42%;
+}
+
+.line1-numbers label,
+.line2-numbers label {
+  display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 }

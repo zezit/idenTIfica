@@ -36,29 +36,40 @@
     <main>
       <h1 class="page--title">UNIVERSIDADES</h1>
       <section>
-        <form action="#">
-          <label
+        <form action="#" id="formDados">
+          <label class="campo-title"
             >Nome:<input
               type="text"
               name="title-universidade"
               id="title-universidade"
           /></label>
-          <label
+          <label class="campo-link"
             >Link:<input
               type="url"
               name="link-universidade"
               id="link-universidade"
           /></label>
-          <label
+          <label class="campo-image"
+            >Imagem:<input
+              type="url"
+              name="link-imagem-universidade"
+              id="link-imagem-universidade"
+          /></label>
+          <label class="campo-desc"
             >Descrição:
-            <textarea id="descricao-universidade" name="descricao-universidade">
-            </textarea>
+            <textarea
+              id="descricao-universidade"
+              name="descricao-universidade"
+              row="100"
+            ></textarea>
           </label>
           <div class="line1-numbers">
             <label
               >Ensino:
               <input
                 type="number"
+                min="1"
+                value="1"
                 name="ensino-universidade"
                 id="ensino-universidade"
             /></label>
@@ -67,6 +78,8 @@
               >Mercado:
               <input
                 type="number"
+                min="1"
+                value="1"
                 name="mercado-universidade"
                 id="mercado-universidade"
             /></label>
@@ -77,6 +90,8 @@
               >Pesquisa:
               <input
                 type="number"
+                min="1"
+                value="1"
                 name="pesquisa-universidade"
                 id="pesquisa-universidade"
             /></label>
@@ -85,16 +100,20 @@
               Número de cursos:
               <input
                 type="number"
+                min="1"
+                value="1"
                 name="cursos-universidade"
                 id="cursos-universidade"
             /></label>
           </div>
         </form>
         <div class="buttons--content">
-          <a href="./edit-content.html">UPDATE</a>
-          <button>DELETE</button>
+          <a href="#" id="save-button">SALVAR</a>
+          <button>DELETAR</button>
         </div>
       </section>
     </main>
+
+    <script src="./script/edit-content.js"></script>
   </body>
 </html>
