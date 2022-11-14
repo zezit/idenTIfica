@@ -25,6 +25,7 @@ main {
 }
 
 section {
+  position: relative;
   border: 0.4px solid var(--dark-saturated-blue);
   border-radius: 5px;
   padding: 50px;
@@ -49,8 +50,30 @@ section form label {
   /* width: 100%; */
 }
 
-section form input {
+section form input,
+section form textarea {
   border: 0.4px solid var(--dark-saturated-blue);
   border-radius: 4px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section form label input,
+section form label textarea {
+  position: absolute;
+  left: 20%;
+}
+
+section form label textarea {
+  width: 65%;
+  max-width: 840px;
+  min-height: 40%;
+}
+
+.line1-numbers{
+  display: flex;
+  width: 100%;
+  background-color: aqua;
 }
