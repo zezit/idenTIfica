@@ -2,10 +2,33 @@ document.addEventListener("DOMContentLoaded", initPage(), false);
 
 document
   .querySelector("#save-button")
-  .addEventListener("click", salvarDados, false);
+  .addEventListener("click", saveEditedContent, false);
 
 function initPage() {
-  console.log(window.location);
+  let params = new URL(document.location).searchParams;
+  let id = params.get("id");
+  // console.log(id);
+
+  // pega o item de mesmo id no localstorage
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+  storage = storage[id];
+  // console.log(storage[id]);
+
+  const form = document.querySelector("#formDados");
+
+  let index = 0;
+  form[index++].value = storage.nome;
+  form[index++].value = storage.link;
+  form[index++].value = storage.image;
+  form[index++].value = storage.descricao;
+  form[index++].value = storage.ruf2019.ensino;
+  form[index++].value = storage.ruf2019.mercado;
+  form[index++].value = storage.ruf2019.pesquisa;
+  form[index++].value = storage.cursos;
 }
 
 function salvarDados() {
@@ -52,4 +75,35 @@ function salvarDados() {
 
   // pega o valor da entrada
   //   console.log(form.elements[6].value);
+}
+
+/**
+ * Salva o conteudo editado
+ */
+function saveEditedContent() {
+  let id = new URL(document.location).searchParams.get("id"); // pega id na url
+  var storage = window.localStorage.getItem("universidades"); // pega local data
+
+  if (storage != null) {
+    let newStorage = JSON.parse(storage);
+    console.log("before", newStorage);
+
+    let form = document.querySelector("#formDados");
+
+    let index = 0;
+    newStorage[id].nome = form.elements[index++].value;
+    newStorage[id].link = form.elements[index++].value;
+    newStorage[id].image = form.elements[index++].value;
+    newStorage[id].descricao = form.elements[index++].value;
+    newStorage[id].ruf2019.ensino = parseInt(form.elements[index++].value);
+    newStorage[id].ruf2019.mercado = parseInt(form.elements[index++].value);
+    newStorage[id].ruf2019.pesquisa = parseInt(form.elements[index++].value);
+    newStorage[id].cursos = parseInt(form.elements[index++].value);
+
+    console.log("after", newStorage);
+
+    localStorage.setItem("universidades", JSON.stringify(newStorage));
+
+    window.location.href = "./crud-index.html";
+  }
 }

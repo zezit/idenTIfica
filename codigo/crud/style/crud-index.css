@@ -179,7 +179,8 @@ main {
   padding: 6px;
 }
 
-.buttons--content button:nth-child(1) {
+.buttons--content button:nth-child(1),
+.buttons--content a:nth-child(1) {
   margin-right: 25px;
   background-color: #6cb552 !important;
 }

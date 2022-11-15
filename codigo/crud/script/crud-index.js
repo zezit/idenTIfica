@@ -56,6 +56,9 @@ function changePage(event) {
 }
 
 function changeContent(id) {
+  document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
+  // limpa lista
+
   switch (parseInt(id)) {
     case TELA_INICIAL:
       break;
@@ -73,7 +76,6 @@ function changeContent(id) {
 }
 
 function showUniversidade() {
-  //   var data = require("../../identifica/universidades/data/dados.json");
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
@@ -112,6 +114,12 @@ function showUniversidade() {
  * Adiciona item novo na base de dados de cada pagina do sistema
  */
 function addNewItem() {
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+
   const docToChange = document.getElementsByClassName(
     "container--conteudo-list"
   )[0];
@@ -124,7 +132,7 @@ function addNewItem() {
               <span class="text--content">Insira uma descrição</span>
           </div>
           <div class="buttons--content">
-              <button href="./edit-content.html?id=#">EDITAR</button>
+              <button href="./edit-content.html?id=${storage.length}">EDITAR</button>
               <button>DELETAR</button>
           </div>
       </div>
@@ -136,6 +144,34 @@ function addNewItem() {
   docToChange.appendChild(novaLinha);
 
   verifyListBorder();
+
+  // salva no localstorage
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+  console.log(storage);
+
+  let universidadesObj = {
+    id: storage.length,
+    nome: "Novo Item",
+    link: "",
+    image: "",
+    descricao: "Insira uma descrição",
+    ruf2019: {
+      ensino: 1,
+      pesquisa: 1,
+      mercado: 1,
+    },
+    cursos: 1,
+  };
+
+  storage.push(universidadesObj);
+
+  console.log(storage);
+
+  localStorage.setItem("universidades", JSON.stringify(storage));
 }
 
 function verifyListBorder() {
