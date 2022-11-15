@@ -1,5 +1,3 @@
-import data from "../data/dados.js";
-
 const container = document.querySelector(".uni--containers");
 
 var cards = 0;
@@ -8,7 +6,13 @@ document.addEventListener("DOMContentLoaded", initPage(), false);
 
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
-  data.forEach((element) => {
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+
+  storage.forEach((element) => {
     cards++;
     const newUniv = document.createElement("div");
 
