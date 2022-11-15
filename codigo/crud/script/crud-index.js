@@ -69,46 +69,42 @@ function changeContent(id) {
     default:
       break;
   }
+  verifyListBorder();
 }
 
 function showUniversidade() {
-  var data = [];
   //   var data = require("../../identifica/universidades/data/dados.json");
-  fetch("../../identifica/universidades/data/dados.json")
-    .then((response) => response.json())
-    .then((content) => {
-      content.forEach((uni) => {
-        data.push(uni);
-      });
-    });
-
-  console.log(
-    "🚀 ~ file: crud-index.js ~ line 71 ~ showUniversidade ~ data",
-    data[0]
-  );
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
 
   const docToChange = document.getElementsByClassName(
     "container--conteudo-list"
   );
 
-  data.forEach((element) => {
+  storage.forEach((element) => {
     // console.log(element);
     const novaLinha = document.createElement("li");
+    let desc = element.descricao.slice(0, 50);
+    desc = desc + "...";
+
     novaLinha.innerHTML = `
       <div class="list--inside">
           <div>
               <span class="title--content">${element.nome}</span>
-              <span class="text--content">${element.descricao}</span>
+              <span class="text--content">${desc}</span>
           </div>
           <div class="buttons--content">
-              <button>UPDATE</button>
-              <button>DELETE</button>
+              <a href="./edit-content.html/universidades/${element.id}">EDITAR</a>
+              <a>DELETAR</a>
           </div>
       </div>
-  //     `;
+   `;
 
-    console.log(novaLinha);
-    docToChange.appendChild(novaLinha);
+    // console.log(novaLinha);
+    docToChange[0].appendChild(novaLinha);
   });
 }
 

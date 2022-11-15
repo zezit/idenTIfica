@@ -184,7 +184,7 @@ main {
   background-color: #6cb552 !important;
 }
 
-.buttons--content button:nth-child(2) {
+.buttons--content a:nth-child(2) {
   background-color: #b55252 !important;
 }
 
