@@ -58,15 +58,20 @@ function changePage(event) {
 
 function changeContent(id) {
   // limpa lista
+  var sub = document.getElementById("subtitle");
 
   switch (parseInt(id)) {
     case TELA_INICIAL:
+      sub.innerHTML = "TELA INICIAL";
       break;
     case FORMULARIO:
+      sub.innerHTML = "FORMULÁRIO";
       break;
     case GRADUACOES:
+      sub.innerHTML = "GRADUAÇÕES";
       break;
     case UNIVERSIDADES:
+      sub.innerHTML = "UNIVERSIDADES";
       showUniversidade();
       break;
     default:
