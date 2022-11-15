@@ -58,6 +58,8 @@ function changePage(event) {
 
 function changeContent(id) {
   // limpa lista
+  document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
+  
   var sub = document.getElementById("subtitle");
 
   switch (parseInt(id)) {

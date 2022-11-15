@@ -24,5 +24,18 @@
       "mercado": 2
     },
     "cursos": 95
+  },
+  {
+    "id": 3,
+    "nome": "FUMEC",
+    "link": "http://www.fumec.br",
+    "image": "https://bhaz.com.br/wp-content/uploads/2022/06/Universidade-FUMEC_-Descubra-como-conseguir-bolsas-de-até-100-e-comece-a-estudar-ainda-em-2022.jpg",
+    "descricao": "Há mais de 50 anos, a Universidade FUMEC dedica-se à formação não só de profissionais capacitados, como de cidadãos conscientes de seu papel na sociedade. A instituição conta com corpo docente predominantemente formado por mestres e doutores com sólida experiência acadêmica e profissional. A Universidade oferece, também, infraestrutura de alto nível, com excelentes instalações, bibliotecas e recursos tecnológicos de última geração.",
+    "ruf2019": {
+      "ensino": 86,
+      "pesquisa": 174,
+      "mercado": 56
+    },
+    "cursos": 40
   }
 ]
