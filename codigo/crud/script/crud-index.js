@@ -97,8 +97,8 @@ function showUniversidade() {
               <span class="text--content">${desc}</span>
           </div>
           <div class="buttons--content">
-              <a href="./edit-content.html/universidades/${element.id}">EDITAR</a>
-              <a>DELETAR</a>
+              <button onClick=goToEditPage("./edit-content.html?id=${element.id}")>EDITAR</button>
+              <button>DELETAR</button>
           </div>
       </div>
    `;
@@ -124,7 +124,7 @@ function addNewItem() {
               <span class="text--content">Insira uma descrição</span>
           </div>
           <div class="buttons--content">
-              <a href="./edit-content.html">ATUALIZAR</a>
+              <button href="./edit-content.html?id=#">EDITAR</button>
               <button>DELETAR</button>
           </div>
       </div>
@@ -146,4 +146,8 @@ function verifyListBorder() {
   } else {
     list[0].classList.remove("borders-list");
   }
+}
+
+function goToEditPage(string) {
+  window.location.href = string;
 }

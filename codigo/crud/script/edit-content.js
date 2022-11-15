@@ -1,6 +1,12 @@
+document.addEventListener("DOMContentLoaded", initPage(), false);
+
 document
   .querySelector("#save-button")
   .addEventListener("click", salvarDados, false);
+
+function initPage() {
+  console.log(window.location);
+}
 
 function salvarDados() {
   var storage = localStorage.getItem("universidades"); // Recupera os dados
