@@ -3,13 +3,14 @@ const FORMULARIO = 2;
 const GRADUACOES = 3;
 const UNIVERSIDADES = 4;
 
+// alterna entre as páginas
 document
   .querySelector(".container--opt")
   .addEventListener("click", changePage, false);
 
-document.addEventListener("DOMContentLoaded", initPage(), false);
+document.addEventListener("DOMContentLoaded", initPage(event), false);
 
-function initPage() {
+function initPage(event) {
   verifyListBorder();
 }
 
@@ -56,7 +57,6 @@ function changePage(event) {
 }
 
 function changeContent(id) {
-  document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
   // limpa lista
 
   switch (parseInt(id)) {
@@ -76,6 +76,8 @@ function changeContent(id) {
 }
 
 function showUniversidade() {
+  document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
+
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
@@ -86,8 +88,7 @@ function showUniversidade() {
     "container--conteudo-list"
   );
 
-  storage.forEach((element) => {
-    // console.log(element);
+  storage.forEach((element, index) => {
     const novaLinha = document.createElement("li");
     let desc = element.descricao.slice(0, 50);
     desc = desc + "...";
@@ -99,8 +100,8 @@ function showUniversidade() {
               <span class="text--content">${desc}</span>
           </div>
           <div class="buttons--content">
-              <button onClick=goToEditPage("./edit-content.html?id=${element.id}")>EDITAR</button>
-              <button>DELETAR</button>
+              <a onClick=goToEditPage("./edit-content.html?id=${index}")>EDITAR</a>
+              <button onClick="deleteContent(${index})">DELETAR</button>
           </div>
       </div>
    `;
@@ -114,44 +115,13 @@ function showUniversidade() {
  * Adiciona item novo na base de dados de cada pagina do sistema
  */
 function addNewItem() {
-  var storage = localStorage.getItem("universidades"); // Recupera os dados
-  storage = JSON.parse(storage);
-  if (storage == null) {
-    storage = [];
-  }
-
-  const docToChange = document.getElementsByClassName(
-    "container--conteudo-list"
-  )[0];
-
-  const novaLinha = document.createElement("li");
-  novaLinha.innerHTML = `
-      <div class="list--inside">
-          <div>
-              <span class="title--content">Novo Item</span>
-              <span class="text--content">Insira uma descrição</span>
-          </div>
-          <div class="buttons--content">
-              <button href="./edit-content.html?id=${storage.length}">EDITAR</button>
-              <button>DELETAR</button>
-          </div>
-      </div>
-  `;
-
-  novaLinha.setAttribute("id", `list-index-${docToChange.children.length}`);
-
-  console.log(novaLinha);
-  docToChange.appendChild(novaLinha);
-
-  verifyListBorder();
-
   // salva no localstorage
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
     storage = [];
   }
-  console.log(storage);
+  // console.log(storage);
 
   let universidadesObj = {
     id: storage.length,
@@ -169,9 +139,12 @@ function addNewItem() {
 
   storage.push(universidadesObj);
 
-  console.log(storage);
+  // console.log(storage);
 
   localStorage.setItem("universidades", JSON.stringify(storage));
+
+  showUniversidade();
+  verifyListBorder();
 }
 
 function verifyListBorder() {
@@ -186,4 +159,24 @@ function verifyListBorder() {
 
 function goToEditPage(string) {
   window.location.href = string;
+}
+
+/**
+ * Deleta conteúdo do storage
+ */
+function deleteContent(index) {
+  console.log(index);
+
+  var storage = window.localStorage.getItem("universidades"); // pega local data
+
+  if (storage != null) {
+    let newStorage = JSON.parse(storage);
+
+    newStorage.splice(index, 1); // 2nd parameter means remove one item only
+
+    localStorage.setItem("universidades", JSON.stringify(newStorage));
+
+    showUniversidade();
+    verifyListBorder();
+  }
 }

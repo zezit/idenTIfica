@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", initPage(), false);
 
+// botão de salvar alterações
 document
   .querySelector("#save-button")
   .addEventListener("click", saveEditedContent, false);
+
+// botão de excluir página
+document
+  .querySelector("#delete-button")
+  .addEventListener("click", deleteContent, false);
 
 function initPage() {
   let params = new URL(document.location).searchParams;
@@ -101,6 +107,33 @@ function saveEditedContent() {
     newStorage[id].cursos = parseInt(form.elements[index++].value);
 
     console.log("after", newStorage);
+
+    localStorage.setItem("universidades", JSON.stringify(newStorage));
+
+    window.location.href = "./crud-index.html";
+  }
+}
+
+/**
+ * Deleta conteúdo do storage
+ */
+function deleteContent() {
+  let id = new URL(document.location).searchParams.get("id"); // pega id na url
+
+  var storage = window.localStorage.getItem("universidades"); // pega local data
+
+  if (storage != null) {
+    let newStorage = JSON.parse(storage);
+
+    let index = -1;
+
+    newStorage.forEach((element, i) => {
+      if (element.id == id) {
+        index = i;
+      }
+    });
+
+    newStorage.splice(index, 1); // 2nd parameter means remove one item only
 
     localStorage.setItem("universidades", JSON.stringify(newStorage));
 
