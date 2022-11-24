@@ -216,11 +216,10 @@
     border-radius: 4px;
     margin-bottom: 17px;
   }
-  testando
 
   .ruf-univ,
   .cursos-univ {
-    display: none !important;
+    display: none;
   }
 
   .mobile-ruf-univ {
@@ -247,7 +246,6 @@
     margin-bottom: 30px;
   }
 
-  .cursos-univ,
   .top-univ-cursos {
     font-size: 20px;
     display: flex;

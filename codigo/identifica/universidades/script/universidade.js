@@ -3,6 +3,7 @@ const container = document.querySelector(".uni--containers");
 var cards = 0;
 
 document.addEventListener("DOMContentLoaded", initPage(), false);
+window.addEventListener("resize", windowSizeChange, false);
 
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
@@ -76,4 +77,28 @@ function initPage() {
 
     container.appendChild(newUniv);
   });
+}
+
+
+function windowSizeChange() {
+  if (window.screen.width <= 750) {
+    const newDesc = document.getElementsByClassName("desc-univ");
+    const backpDesc = newDesc;
+
+    for (let i = 0; i < newDesc.length; i++) {
+      var textOld = newDesc.item(i).innerHTML
+      var textoNew = textOld.slice(0, 300);
+      textoNew = textoNew + "...";
+
+      newDesc.item(i).innerHTML = textoNew
+    }
+
+  }
+  else {
+    var storage = localStorage.getItem("universidades"); // Recupera os dados
+    storage = JSON.parse(storage);
+    if (storage == null) {
+      storage = [];
+    }
+  }
 }
