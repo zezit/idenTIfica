@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>idenTIfica | Crud</title>
+
+    <!-- link to local style -->
+    <link rel="stylesheet" href="style/crud-index.css" />
+
+    <link rel="shortcut icon" href="../identifica/imagens/title-LOGO.png" type="image/x-icon">
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <header>
+      <a class="logo-container" href="#">
+        <img src="../identifica/imagens/idenTIfica.svg" alt="logo-nav" />
+      </a>
+
+      <a href="../identifica/index.html">Sair</a>
+    </header>
+
+    <main>
+      <div>
+        <div class="container--up">
+          <div class="container--title">
+            <h1>GERENCIAMENTO</h1>
+            <h3 id="subtitle">TELA INICIAL</h3>
+          </div>
+          <div class="container--image">
+            <img src="../identifica/imagens/crud-home.svg" alt="" />
+          </div>
+        </div>
+        <div class="container--opt">
+          <ul>
+            <li id="1" class="opt--selected-initial opt-selected">
+              Tela Inicial
+            </li>
+            <li id="2">Formulário</li>
+            <li id="3">Graduações</li>
+            <li id="4">Universidades</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container--conteudo">
+        <ul class="container--conteudo-list"></ul>
+        <div class="button-addnew">
+          <p>Adicionar novo item</p>
+          <button onclick="addNewItem()">
+            <img src="../identifica/imagens/plus.svg" />
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script/crud-index.js"></script>
+  </body>
+</html>

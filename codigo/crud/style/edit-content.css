@@ -1,0 +1,140 @@
+header div {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding: 0 78px;
+}
+
+.back--initial {
+  margin-right: 50px;
+}
+
+.back--initial img {
+  width: 40px;
+  filter: brightness(1);
+}
+
+.page--title {
+  margin: 64px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+section {
+  position: relative;
+  border: 0.4px solid var(--dark-saturated-blue);
+  border-radius: 5px;
+  padding: 50px;
+  margin-bottom: 80px;
+}
+
+section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section form label,
+.line1-numbers {
+  margin-bottom: 51px;
+}
+
+section form label {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* width: 100%; */
+}
+
+section form input,
+section form textarea {
+  border: 0.4px solid var(--dark-saturated-blue);
+  border-radius: 4px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 18px;
+}
+
+input,
+textarea {
+  color: black;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+section form label textarea {
+  width: 65%;
+  max-width: 840px;
+  min-height: 40%;
+}
+
+.campo-title,
+.campo-link,
+.campo-image {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.campo-title input,
+.campo-link input,
+.campo-image input {
+  width: 66%;
+}
+
+.campo-desc {
+  height: 339px;
+  width: 81%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.campo-desc textarea {
+  resize: vertical;
+  height: fit-content;
+  width: 80%;
+  height: 100%;
+}
+
+.line1-numbers,
+.line2-numbers {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 67%;
+}
+
+.line1-numbers input,
+.line2-numbers input {
+  width: 42%;
+}
+
+.line1-numbers label,
+.line2-numbers label {
+  display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}

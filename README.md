@@ -6,12 +6,9 @@ O *idenTIfica* consiste em uma plataforma para auxiliar jovens e adultos na esco
 
 ## Alunos integrantes da equipe
 
-* Alexandre Bernardes Alves Fernandes
-* José Carlos Ferreira de Andrade
 * Jose Victor Mendes Dias
 * Lucas Henrique Orselino de Magalhães
 * Mellyssa Meireles dos Santos
-* Vinicius Reggiani Lima
 
 ## Professores responsáveis
 
