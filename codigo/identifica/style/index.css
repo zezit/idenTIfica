@@ -304,9 +304,14 @@ nav {
 }
 
 /* footer style */
-footer {
+body {
   /* position: relative; */
-  /* bottom: 0; */
+  min-height: 100vh;
+}
+
+footer {
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
   user-select: none;
   background-color: var(--light-grey);

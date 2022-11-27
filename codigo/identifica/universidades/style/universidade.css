@@ -70,6 +70,7 @@
 }
 
 .mobile-ruf-univ {
+  align-self: center;
   text-align: center;
   display: none;
   justify-content: center;
@@ -83,6 +84,7 @@
 .ruf-titles-vertical {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .ruf-univ td,
@@ -251,4 +253,22 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.show {
+  display: inherit !important;
+}
+
+.show-flex {
+  display: flex !important;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.hide {
+  display: none !important;
+}
+
+.poster-univ {
+  padding-bottom: 20px;
 }
