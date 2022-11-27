@@ -16,7 +16,8 @@ function initPage() {
   storage.forEach((element) => {
     cards++;
     const newUniv = document.createElement("div");
-
+    newUniv.id = element.id;
+    
     newUniv.innerHTML = `
         <a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="${element.link}">${element.nome}</a>
         <div class="univ-image">
