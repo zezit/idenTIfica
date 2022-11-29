@@ -17,7 +17,7 @@ function initPage() {
     cards++;
     const newUniv = document.createElement("div");
     newUniv.id = element.id;
-    
+
     newUniv.innerHTML = `
         <a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="${element.link}">${element.nome}</a>
         <div class="univ-image">
@@ -91,6 +91,22 @@ function windowSizeChange() {
 
       newDesc.item(i).innerHTML = textoNew;
     }
+
+    var aux = document.querySelectorAll(".mobile-ruf-univ");
+    for (let i = 0; i < aux.length; i++) {
+      aux[i].classList.remove("show-flex");
+    }
+
+    aux = document.querySelectorAll(".univ-image img");
+    for (let i = 0; i < aux.length; i++) {
+      aux[i].classList.remove("show");
+    }
+
+    aux = document.querySelectorAll(".link--ver-mais");
+    for (let i = 0; i < aux.length; i++) {
+      aux[i].classList.remove("hide");
+    }
+
   } else {
     const div = document.querySelectorAll(".mobile-ruf-univ");
     for (let i = 0; i < div.length; i++) {
@@ -114,10 +130,21 @@ for (var i = 0; i < elements.length; i++) {
 function verMais() {
   const div =
     document.getElementsByClassName("uni--containers")[0].children[
-      parseInt(this.id) - 1
+    parseInt(this.id) - 1
     ];
 
   div.querySelector(".univ-image img").classList.add("show");
   div.querySelector(".mobile-ruf-univ").classList.add("show-flex");
   div.querySelector(".link--ver-mais").classList.add("hide");
+
+  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+
+  const allDivs = document.getElementsByClassName("poster-univ")
+  for (let i = 0; i < allDivs.length; i++) {
+    allDivs[i].getElementsByClassName("desc-univ")[0].innerHTML = `${storage[i].descricao}`
+  }
 }
