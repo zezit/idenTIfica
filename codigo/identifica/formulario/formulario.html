@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>idenTIfica | Teste</title>
+
+    <!-- link to local style -->
+    <link rel="stylesheet" href="./style/formulario.css" />
+
+    <link rel="shortcut icon" href="../imagens/title-LOGO.png" type="image/x-icon">
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <header>
+        <nav>
+            <a class="logo-container" href="#">
+                <img src="../imagens/idenTIfica.svg" alt="logo-nav" />
+            </a>
+
+            <div class="side-options">
+                <div class="options--container">
+                    <ul class="menu">
+                        <li class="form-link">
+                            <a href="./formulario/formulario.html"> Realizar Teste</a>
+                        </li>
+                        <li><a href=""> Graduações</a></li>
+                        <li>
+                            <a href="../universidades/universidade.html"> Universidades</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="search-form" role="search">
+                    <button class="clear-button--search-bar" type="reset">
+                        <img src="../imagens/close_search_bar.svg" alt="clear-icon" />
+                    </button>
+                    <input class="search-input" placeholder="Pesquisar" />
+                    <button class="button--search-bar" type="submit">
+                        <img src="../imagens/search-icon.svg" alt="search-icon" />
+                    </button>
+                </form>
+            </div>
+            <!-- mobile two options -->
+            <div class="side-options-mobile hide">
+                <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
+                    <img src="../imagens/search-mob.svg" alt="search button" />
+                </a>
+                <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+                    <img src="../imagens/menu.svg" alt="menu icon" />
+                </a>
+            </div>
+            <!-- mobile search bar -->
+            <form class="mob-search-form hide" role="search">
+                <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
+                    <img src="../imagens/close_search_bar.svg" alt="clear-icon" />
+                </button>
+                <input class="mob-search-input" placeholder="Pesquisar" />
+                <button class="mob-button--search-bar" type="submit">
+                    <img src="../imagens/search-icon.svg" alt="search-icon" />
+                </button>
+            </form>
+        </nav>
+        <!-- mobile menu -->
+        <div class="options--container-mobile">
+            <ul class="menu-mobile">
+                <li class="form-link-mobile">
+                    <a href="./formulario/formulario.html"> Realizar Teste</a>
+                </li>
+                <li><a href=""> Graduações</a></li>
+                <li>
+                    <a href="../universidades/universidade.html"> Universidades</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Aqui irão as páginas -->
+    <section>
+        <h1 class="page-title">FORMULÁRIO</h1>
+        <form class="form--container" action="">
+            <div class="indv-container">
+                <p class="question-st" id="question_0">Lorem ipsum dolor sit amet elit accusam quis erat elitr aliquyam
+                    accumsan ullamcorper lorem aliquip takimata accusam vero takimata dolore takimata duis invidunt
+                    feugiat sit et eirmod sea ea sadipscing?</p>
+                <div>
+                    <input class="questions-radio" type="radio" id="question_0_a_0" value="0" name="question_0_st">
+                    <label class="questions-text" for="question_0_a_0">Resposta 1</label>
+                </div>
+                <div>
+                    <input class="questions-radio" type="radio" id="question_0_a_1" value="1" name="question_0_st">
+                    <label class="questions-text" for="question_0_a_1">Resposta 2</label>
+                </div>
+                <div>
+                    <input class="questions-radio" type="radio" id="question_0_a_2" value="2" name="question_0_st">
+                    <label class="questions-text" for="question_0_a_2">Resposta 3</label>
+                </div>
+                <div>
+                    <input class="questions-radio" type="radio" id="question_0_a_3" value="3" name="question_0_st">
+                    <label class="questions-text" for="question_0_a_3">Resposta 4</label>
+                </div>
+
+                <br>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer--logo-container">
+            <img src="../imagens/idenTIfica-blue.svg" alt="logo-nav" width="160" />
+        </div>
+        <div class="footer--menu-container">
+            <ul class="footer--menu">
+                <li>
+                    <a href=""> Home</a>
+                </li>
+                <li class="footer--form-link">
+                    <a href="">Realizar Teste</a>
+                </li>
+                <li>
+                    <a href=""> Graduações</a>
+                </li>
+                <li>
+                    <a href="../universidades/universidade.html"> Universidades</a>
+                </li>
+            </ul>
+            <div class="footer--menu-grid">
+                <ul class="footer-menu-grid-left">
+                    <li>
+                        <a href="../index.html"> Home</a>
+                    </li>
+                    <li class="footer--form-link">
+                        <a href="">Realizar Teste</a>
+                    </li>
+                    <li>
+                        <a href=""> Graduações</a>
+                    </li>
+                </ul>
+                <ul class="footer-menu-grid-right">
+                    <li>
+                        <a href=""> Universidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer--puc-link">
+            <a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="https://www.pucminas.br">
+                <img src="../imagens/puc-logo.svg" alt="puc-logo" />
+                <span>PUC Minas</span>
+            </a>
+        </div>
+    </footer>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>
