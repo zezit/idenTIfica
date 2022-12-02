@@ -17,6 +17,8 @@
 }
 
 .form--container input[type="radio"] {
+  margin-top: 4px;
+  min-width: 18px;
   cursor: pointer;
   appearance: none;
   background-color: #dbdffd;
@@ -54,9 +56,14 @@
 .indv-container div {
   cursor: pointer;
   display: flex;
-  align-items: center;
+  flex: 1 0 auto;
+  align-items: flex-start;
   margin-left: 44px;
-  margin-bottom: 7px;
+  margin-bottom: 20px;
+}
+
+.indv-container:last-child {
+  border: none;
 }
 
 .indv-container label {
@@ -73,6 +80,21 @@
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+.questions-text strong {
+  color: black;
+}
+
+.form-submit {
+  outline: none;
+  border: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+  width: 30%;
+  height: 60px;
+  min-width: 300px;
+  font-size: 1.5em;
 }
 
 /** Responsividade **/

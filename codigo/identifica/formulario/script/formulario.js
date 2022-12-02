@@ -1,123 +1,93 @@
-const container = document.querySelector(".uni--containers");
-
-var cards = 0;
+const container = document.querySelector(".form--container");
 
 document.addEventListener("DOMContentLoaded", initPage(), false);
-window.addEventListener("resize", windowSizeChange, false);
+
+const submitFormBtn = document.querySelector(".form-submit");
+submitFormBtn.addEventListener("click", submmitFormTreat, false);
 
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
-  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  console.log('Iniciando Form page')
+  var storage = localStorage.getItem("formulario"); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
     storage = [];
   }
 
-  storage.forEach((element) => {
-    cards++;
-    const newUniv = document.createElement("div");
-    newUniv.id = element.id;
-    
-    newUniv.innerHTML = `
-        <a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="${element.link}">${element.nome}</a>
-        <div class="univ-image">
-          <img src="${element.image}" alt="image universidade"/>
-        </div>
-        <div class="right-desc">
-          <a rel="noopener noreferrer" class="nome-univ" target="_blank" href="${element.link}">${element.nome}</a>
-          <div class="top-univ-cursos">
-            <img src="../imagens/univ.svg" alt="universidade vector"/>
-            <p>${element.cursos} cursos ofertados</p>
-          </div>
-          <p class="desc-univ">
-            ${element.descricao}
-          </p>
-          <table class="ruf-univ">
-            <tr class="ruf-titles">
-              <td>Ensino</td>
-              <td>Pesquisa</td>
-              <td>Mercado</td>
-            </tr>
-            <tr class="ruf-value">
-              <td class="ensino-pos">${element.ruf2019.ensino}º</td>
-              <td class="pesquisa-pos">${element.ruf2019.pesquisa}º</td>
-              <td class="mercado-pos">${element.ruf2019.mercado}º</td>
-            </tr>
-          </table>
+  storage.forEach((element, questionIndex) => {
+    const newQuestion = document.createElement("div");
+    newQuestion.id = element.id;
+    newQuestion.classList.add("indv-container");
 
-          <div class="mobile-ruf-univ">
-              <table class="ruf-vertical">
-                <tr class="ruf-titles-vertical">
-                  <td class="border-top">Ensino</td>
-                  <td class="ensino-pos">${element.ruf2019.ensino}º</td>
-                </tr>
-                <tr class="ruf-titles-vertical">
-                  <td>Pesquisa</td>
-                  <td class="pesquisa-pos">${element.ruf2019.pesquisa}º</td>
-                </tr>
-                <tr class="ruf-titles-vertical">
-                  <td>Mercado</td>
-                  <td class="mercado-pos">${element.ruf2019.mercado}º</td>
-                </tr>
-              </table>
-          </div>
+    var todasRespostas = "";
+    var indicator = "A";
 
-          <div class="link--ver-mais">
-            <a id=${element.id} class="open-more">Ver mais...</a>
-          </div>
+    element.respostas.forEach((resp, respIndex) => {
+      todasRespostas +=
+        `<div>
+            <input class="questions-radio" type="radio" id="question_${questionIndex}_a_${respIndex}" value="${respIndex}" name="question_${questionIndex}_st">
+            <label class="questions-text" for="question_${questionIndex}_a_${respIndex}">${"<strong>" + indicator + " - " + "</strong>" + resp}</label>
+         </div>
+        `
+      function nextLetter(indicator) {
+        return indicator.replace(/([a-zA-Z])[^a-zA-Z]*$/, function (a) {
+          var c = a.charCodeAt(0);
+          switch (c) {
+            case 90: return 'A';
+            case 122: return 'a';
+            default: return String.fromCharCode(++c);
+          }
+        });
+      }
 
-          <div class="cursos-univ">
-            <img src="../imagens/univ.svg" alt="universidade vector"/>
-            <p>${element.cursos} cursos ofertados</p>
-          </div>
-        </div>
+      indicator = nextLetter(indicator)
+    });
+
+    newQuestion.innerHTML = `
+    <p class="question-st" id="question_0">
+      ${questionIndex + 1 + ") " + element.pergunta}
+    </p>
+    ${todasRespostas}
+    <br>
     `;
-    newUniv.classList.add("poster-univ");
 
-    container.appendChild(newUniv);
+    container.appendChild(newQuestion);
   });
 
-  windowSizeChange();
-}
+  if (storage.length != null) {
+    const button = document.createElement("button")
+    button.innerHTML = "Descobrir meu curso!"
+    button.type = "submit"
 
-function windowSizeChange() {
-  if (window.screen.width <= 750) {
-    const newDesc = document.getElementsByClassName("desc-univ");
+    button.classList.add("form-link")
+    button.classList.add("form-submit")
 
-    for (let i = 0; i < newDesc.length; i++) {
-      var textOld = newDesc.item(i).innerHTML;
-      var textoNew = textOld.slice(0, 300);
-      textoNew = textoNew + "...";
-
-      newDesc.item(i).innerHTML = textoNew;
-    }
-  } else {
-    const div = document.querySelectorAll(".mobile-ruf-univ");
-    for (let i = 0; i < div.length; i++) {
-      div[i].classList.remove("show-flex");
-    }
-
-    var storage = localStorage.getItem("universidades"); // Recupera os dados
-    storage = JSON.parse(storage);
-    if (storage == null) {
-      storage = [];
-    }
+    container.appendChild(button)
   }
 }
 
-var elements = document.getElementsByClassName("open-more");
+function submmitFormTreat(event) {
+  event.preventDefault();
 
-for (var i = 0; i < elements.length; i++) {
-  elements[i].addEventListener("click", verMais, false);
-}
+  const allQuestions = document.querySelector(".form--container")
 
-function verMais() {
-  const div =
-    document.getElementsByClassName("uni--containers")[0].children[
-      parseInt(this.id) - 1
-    ];
+  let checked = false
 
-  div.querySelector(".univ-image img").classList.add("show");
-  div.querySelector(".mobile-ruf-univ").classList.add("show-flex");
-  div.querySelector(".link--ver-mais").classList.add("hide");
+  for (let i = 0; i < allQuestions.children.length - 1; i++) {
+    // console.log(allQuestions.children[i])
+    checked = false
+    for (let j = 1; j < allQuestions.children[i].children.length - 1; j++) {
+      // console.log(allQuestions.children[i].children[j].children[0].checked)
+      if (allQuestions.children[i].children[j].children[0].checked) {
+        checked = true;
+      }
+    }
+  }
+
+  if (!checked) {
+    alert("Você precisa responder todas perguntas para obter um resultado!")
+  }
+  else {
+    // Todas perguntas respondidas; tratar o resultado e redirencionar
+  }
 }
