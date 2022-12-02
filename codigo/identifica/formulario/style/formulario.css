@@ -97,6 +97,10 @@
   font-size: 1.5em;
 }
 
+.hide {
+  display: none !important;
+}
+
 /** Responsividade **/
 @media (max-width: 1300px) {
   .page-title {

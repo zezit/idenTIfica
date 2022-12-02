@@ -8,7 +8,7 @@ document
   .querySelector(".container--opt")
   .addEventListener("click", changePage, false);
 
-document.addEventListener("DOMContentLoaded", initPage(event), false);
+document.addEventListener("DOMContentLoaded", initPage, false);
 
 function initPage(event) {
   verifyListBorder();
@@ -59,7 +59,7 @@ function changePage(event) {
 function changeContent(id) {
   // limpa lista
   document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
-  
+
   var sub = document.getElementById("subtitle");
 
   switch (parseInt(id)) {
@@ -68,6 +68,7 @@ function changeContent(id) {
       break;
     case FORMULARIO:
       sub.innerHTML = "FORMULÁRIO";
+      showFormulario();
       break;
     case GRADUACOES:
       sub.innerHTML = "GRADUAÇÕES";
@@ -107,7 +108,43 @@ function showUniversidade() {
               <span class="text--content">${desc}</span>
           </div>
           <div class="buttons--content">
-              <a onClick=goToEditPage("./edit-content.html?id=${index}")>EDITAR</a>
+              <a onClick=goToEditPage("./edit-content.html?id=${index}&page=universidades")>EDITAR</a>
+              <button onClick="deleteContent(${index})">DELETAR</button>
+          </div>
+      </div>
+   `;
+
+    // console.log(novaLinha);
+    docToChange[0].appendChild(novaLinha);
+  });
+}
+
+function showFormulario() {
+  document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
+
+  var storage = localStorage.getItem("formulario"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+
+  const docToChange = document.getElementsByClassName(
+    "container--conteudo-list"
+  );
+
+  storage.forEach((element, index) => {
+    const novaLinha = document.createElement("li");
+    let quest = element.pergunta.slice(0, 50);
+    quest = quest + "...";
+
+    novaLinha.innerHTML = `
+      <div class="list--inside">
+          <div>
+              <span class="title--content">${index + 1 + ") "}</span>
+              <span class="text--content">${quest}</span>
+          </div>
+          <div class="buttons--content">
+              <a onClick=goToEditPage("./edit-content.html?id=${index}&page=formulario")>EDITAR</a>
               <button onClick="deleteContent(${index})">DELETAR</button>
           </div>
       </div>
@@ -123,35 +160,75 @@ function showUniversidade() {
  */
 function addNewItem() {
   // salva no localstorage
-  var storage = localStorage.getItem("universidades"); // Recupera os dados
+  let elemento = document.querySelector(".opt-selected");
+  var page = elemento.classList[0];
+  var storage = localStorage.getItem(page); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
     storage = [];
   }
-  // console.log(storage);
+  console.log(storage);
 
-  let universidadesObj = {
-    id: storage.length,
-    nome: "Novo Item",
-    link: "",
-    image: "",
-    descricao: "Insira uma descrição",
-    ruf2019: {
-      ensino: 1,
-      pesquisa: 1,
-      mercado: 1,
-    },
-    cursos: 1,
-  };
+  switch (page) {
+    case "inicial":
+      break;
+    case "formulario":
+      storage.push({
+        id: storage.length,
+        pergunta: "Nova pergunta",
+        respostas: [
+          "Resposta A",
+          "Resposta B",
+          "Resposta C",
+          "Resposta D",
+          "Resposta E",
+        ],
+      });
+      break;
+    case "graduacoes":
+      break;
+    case "universidades":
+      storage.push({
+        id: storage.length,
+        nome: "Novo Item",
+        link: "",
+        image: "",
+        descricao: "Insira uma descrição",
+        ruf2019: {
+          ensino: 1,
+          pesquisa: 1,
+          mercado: 1,
+        },
+        cursos: 1,
+      });
+      break;
+    default:
+      break;
+  }
 
-  storage.push(universidadesObj);
+  console.log(storage);
 
-  // console.log(storage);
+  localStorage.setItem(page, JSON.stringify(storage));
 
-  localStorage.setItem("universidades", JSON.stringify(storage));
-
-  showUniversidade();
+  showPage(page);
   verifyListBorder();
+}
+
+function showPage(pagina) {
+  switch (pagina) {
+    case "inicial":
+      break;
+    case "formulario":
+      showFormulario();
+      break;
+    case "graduacoes":
+      break;
+    case "universidades":
+      showUniversidade();
+      break;
+    default:
+      break;
+  }
 }
 
 function verifyListBorder() {
@@ -174,16 +251,19 @@ function goToEditPage(string) {
 function deleteContent(index) {
   console.log(index);
 
-  var storage = window.localStorage.getItem("universidades"); // pega local data
+  let elemento = document.querySelector(".opt-selected");
+  var page = elemento.classList[0];
+
+  var storage = window.localStorage.getItem(page); // pega local data
 
   if (storage != null) {
     let newStorage = JSON.parse(storage);
 
     newStorage.splice(index, 1); // 2nd parameter means remove one item only
 
-    localStorage.setItem("universidades", JSON.stringify(newStorage));
+    localStorage.setItem(page, JSON.stringify(newStorage));
 
-    showUniversidade();
+    showPage(page);
     verifyListBorder();
   }
 }

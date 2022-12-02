@@ -1,125 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>idenTIfica | Crud</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- link to local style -->
-    <link rel="stylesheet" href="style/crud-index.css" />
-    <link rel="stylesheet" href="style/edit-content.css" />
+  <title>idenTIfica | Crud</title>
 
-    <link
-      rel="shortcut icon"
-      href="../identifica/imagens/title-LOGO.png"
-      type="image/x-icon"
-    />
+  <!-- link to local style -->
+  <link rel="stylesheet" href="style/crud-index.css" />
+  <link rel="stylesheet" href="style/edit-content.css" />
 
-    <!-- link google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Barra de navegação -->
-    <header>
-      <div>
-        <a href="./crud-index.html" class="back--initial">
-          <img src="../identifica/imagens/left-arrow.svg" alt="" />
-        </a>
-        <a class="logo-container" href="#">
-          <img src="../identifica/imagens/idenTIfica.svg" alt="logo-nav" />
-        </a>
+  <link rel="shortcut icon" href="../identifica/imagens/title-LOGO.png" type="image/x-icon" />
+
+  <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Barra de navegação -->
+  <header>
+    <div>
+      <a href="./crud-index.html" class="back--initial">
+        <img src="../identifica/imagens/left-arrow.svg" alt="" />
+      </a>
+      <a class="logo-container" href="#">
+        <img src="../identifica/imagens/idenTIfica.svg" alt="logo-nav" />
+      </a>
+    </div>
+
+    <a href="../identifica/index.html">Sair</a>
+  </header>
+
+  <main>
+    <h1 class="page--title"></h1>
+    <section>
+      <form action="#" id="formDados">
+      </form>
+      <div class="buttons--content">
+        <a id="save-button">SALVAR</a>
+        <button id="delete-button">DELETAR</button>
       </div>
+    </section>
+  </main>
 
-      <a href="../identifica/index.html">Sair</a>
-    </header>
+  <script src="./script/edit-content.js"></script>
+</body>
 
-    <main>
-      <h1 class="page--title">UNIVERSIDADES</h1>
-      <section>
-        <form action="#" id="formDados">
-          <label class="campo-title"
-            >Nome:<input
-              type="text"
-              name="title-universidade"
-              id="title-universidade"
-          /></label>
-          <label class="campo-link"
-            >Link:<input
-              type="url"
-              name="link-universidade"
-              id="link-universidade"
-          /></label>
-          <label class="campo-image"
-            >Imagem:<input
-              type="url"
-              name="link-imagem-universidade"
-              id="link-imagem-universidade"
-          /></label>
-          <label class="campo-desc"
-            >Descrição:
-            <textarea
-              id="descricao-universidade"
-              name="descricao-universidade"
-              row="100"
-            ></textarea>
-          </label>
-          <div class="line1-numbers">
-            <label
-              >Ensino:
-              <input
-                type="number"
-                min="1"
-                value="1"
-                name="ensino-universidade"
-                id="ensino-universidade"
-            /></label>
-
-            <label
-              >Mercado:
-              <input
-                type="number"
-                min="1"
-                value="1"
-                name="mercado-universidade"
-                id="mercado-universidade"
-            /></label>
-          </div>
-
-          <div class="line2-numbers">
-            <label
-              >Pesquisa:
-              <input
-                type="number"
-                min="1"
-                value="1"
-                name="pesquisa-universidade"
-                id="pesquisa-universidade"
-            /></label>
-
-            <label>
-              Número de cursos:
-              <input
-                type="number"
-                min="1"
-                value="1"
-                name="cursos-universidade"
-                id="cursos-universidade"
-            /></label>
-          </div>
-        </form>
-        <div class="buttons--content">
-          <a id="save-button">SALVAR</a>
-          <button id="delete-button">DELETAR</button>
-        </div>
-      </section>
-    </main>
-
-    <script src="./script/edit-content.js"></script>
-  </body>
 </html>

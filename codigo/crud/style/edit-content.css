@@ -139,6 +139,18 @@ label {
   line-height: 20px;
 }
 
+/* Formulario */
+.todas-respostas {
+  margin-left: 8%;
+}
+
+.todas-respostas input,
+#pergunta-form {
+  overflow-wrap: break-word;
+  width: 70%;
+  margin-left: 30px;
+}
+
 /*** responsividade ***/
 @media (max-width: 830px) {
   form {
@@ -146,7 +158,7 @@ label {
   }
 
   label {
-    background-color: aqua;
+    /* background-color: aqua; */
     flex-direction: column;
     align-items: center;
   }
@@ -159,5 +171,15 @@ label {
   section form label textarea {
     width: 80%;
     max-width: 80%;
+  }
+
+  .todas-respostas {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .todas-respostas input,
+  #pergunta-form {
+    margin-left: 0;
   }
 }

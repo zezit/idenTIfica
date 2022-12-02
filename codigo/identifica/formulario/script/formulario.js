@@ -7,7 +7,7 @@ submitFormBtn.addEventListener("click", submmitFormTreat, false);
 
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
-  console.log('Iniciando Form page')
+  console.log("Iniciando Form page");
   var storage = localStorage.getItem("formulario"); // Recupera os dados
   storage = JSON.parse(storage);
   if (storage == null) {
@@ -23,24 +23,28 @@ function initPage() {
     var indicator = "A";
 
     element.respostas.forEach((resp, respIndex) => {
-      todasRespostas +=
-        `<div>
+      todasRespostas += `<div class=${resp.length ? "" : "hide"}>
             <input class="questions-radio" type="radio" id="question_${questionIndex}_a_${respIndex}" value="${respIndex}" name="question_${questionIndex}_st">
-            <label class="questions-text" for="question_${questionIndex}_a_${respIndex}">${"<strong>" + indicator + " - " + "</strong>" + resp}</label>
+            <label class="questions-text" for="question_${questionIndex}_a_${respIndex}">${
+        "<strong>" + indicator + " - " + "</strong>" + resp
+      }</label>
          </div>
-        `
+        `;
       function nextLetter(indicator) {
         return indicator.replace(/([a-zA-Z])[^a-zA-Z]*$/, function (a) {
           var c = a.charCodeAt(0);
           switch (c) {
-            case 90: return 'A';
-            case 122: return 'a';
-            default: return String.fromCharCode(++c);
+            case 90:
+              return "A";
+            case 122:
+              return "a";
+            default:
+              return String.fromCharCode(++c);
           }
         });
       }
 
-      indicator = nextLetter(indicator)
+      indicator = nextLetter(indicator);
     });
 
     newQuestion.innerHTML = `
@@ -55,27 +59,27 @@ function initPage() {
   });
 
   if (storage.length != null) {
-    const button = document.createElement("button")
-    button.innerHTML = "Descobrir meu curso!"
-    button.type = "submit"
+    const button = document.createElement("button");
+    button.innerHTML = "Descobrir meu curso!";
+    button.type = "submit";
 
-    button.classList.add("form-link")
-    button.classList.add("form-submit")
+    button.classList.add("form-link");
+    button.classList.add("form-submit");
 
-    container.appendChild(button)
+    container.appendChild(button);
   }
 }
 
 function submmitFormTreat(event) {
   event.preventDefault();
 
-  const allQuestions = document.querySelector(".form--container")
+  const allQuestions = document.querySelector(".form--container");
 
-  let checked = false
+  let checked = false;
 
   for (let i = 0; i < allQuestions.children.length - 1; i++) {
     // console.log(allQuestions.children[i])
-    checked = false
+    checked = false;
     for (let j = 1; j < allQuestions.children[i].children.length - 1; j++) {
       // console.log(allQuestions.children[i].children[j].children[0].checked)
       if (allQuestions.children[i].children[j].children[0].checked) {
@@ -85,9 +89,8 @@ function submmitFormTreat(event) {
   }
 
   if (!checked) {
-    alert("Você precisa responder todas perguntas para obter um resultado!")
-  }
-  else {
+    alert("Você precisa responder todas perguntas para obter um resultado!");
+  } else {
     // Todas perguntas respondidas; tratar o resultado e redirencionar
   }
 }
