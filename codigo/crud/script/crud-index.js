@@ -11,7 +11,64 @@ document
 document.addEventListener("DOMContentLoaded", initPage, false);
 
 function initPage(event) {
+  const url = new URL(window.location);
+  if (url.searchParams.get("page") == null) {
+    console.log("iniciando");
+    url.searchParams.set("page", "inicial");
+    window.history.pushState({}, "", url);
+  }
+
+  // showPage(url.searchParams.get("page"));
   verifyListBorder();
+}
+
+function showPage(page) {
+  console.log(page);
+  // for (let i = 1; i < 5; i++) {
+  //   document.getElementById(i).classList.remove("opt--selected-initial");
+  //   document.getElementById(i).classList.remove("opt--selected-center");
+  //   document.getElementById(i).classList.remove("opt--selected-end");
+  //   document.getElementById(i).classList.remove("opt-selected");
+  // }
+
+  // let idAux;
+  // switch (page) {
+  //   case "inicial":
+  //     idAux = TELA_INICIAL;
+  //     break;
+  //   case "formularios":
+  //     idAux = FORMULARIO;
+  //     break;
+  //   case "graduacoes":
+  //     idAux = GRADUACOES;
+  //     break;
+  //   case "universidades":
+  //     idAux = UNIVERSIDADES;
+  //     break;
+  //   default:
+  //     break;
+  // }
+
+  // document.getElementById(idAux).classList.add("opt-selected");
+
+  // switch (parseInt(idAux)) {
+  //   case TELA_INICIAL:
+  //     document.getElementById(idAux).classList.add("opt--selected-initial");
+  //     break;
+  //   case FORMULARIO:
+  //     document.getElementById(idAux).classList.add("opt--selected-center");
+  //     break;
+  //   case GRADUACOES:
+  //     document.getElementById(idAux).classList.add("opt--selected-center");
+  //     break;
+  //   case UNIVERSIDADES:
+  //     document.getElementById(idAux).classList.add("opt--selected-end");
+  //     break;
+  //   default:
+  //     break;
+  // }
+
+  // changeContent(idAux);
 }
 
 /**
@@ -61,20 +118,29 @@ function changeContent(id) {
   document.getElementsByClassName("container--conteudo-list")[0].innerHTML = "";
 
   var sub = document.getElementById("subtitle");
+  const url = new URL(window.location);
 
   switch (parseInt(id)) {
     case TELA_INICIAL:
       sub.innerHTML = "TELA INICIAL";
+      url.searchParams.set("page", "inicial");
+      window.history.pushState({}, "", url);
       break;
     case FORMULARIO:
       sub.innerHTML = "FORMULÁRIO";
+      url.searchParams.set("page", "formulario");
+      window.history.pushState({}, "", url);
       showFormulario();
       break;
     case GRADUACOES:
       sub.innerHTML = "GRADUAÇÕES";
+      url.searchParams.set("page", "graduacoes");
+      window.history.pushState({}, "", url);
       break;
     case UNIVERSIDADES:
       sub.innerHTML = "UNIVERSIDADES";
+      url.searchParams.set("page", "universidades");
+      window.history.pushState({}, "", url);
       showUniversidade();
       break;
     default:
@@ -174,7 +240,7 @@ function addNewItem() {
       break;
     case "formulario":
       storage.push({
-        id: storage.length,
+        id: storage.length + 1,
         pergunta: "Nova pergunta",
         respostas: [
           "Resposta A",
@@ -260,6 +326,13 @@ function deleteContent(index) {
     let newStorage = JSON.parse(storage);
 
     newStorage.splice(index, 1); // 2nd parameter means remove one item only
+
+    newStorage = newStorage.map((element, i) => {
+      return {
+        ...element,
+        id: i + 1,
+      };
+    });
 
     localStorage.setItem(page, JSON.stringify(newStorage));
 

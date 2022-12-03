@@ -12,7 +12,6 @@ document
 
 function formCampos(pagina) {
   const campos = document.querySelector("form");
-  // campos.innerHTML = "<p>Não cadastrado</p>";
 
   switch (pagina) {
     case "inicial":
@@ -157,52 +156,6 @@ function initPage() {
   }
 }
 
-// function salvarDados() {
-//   var storage = localStorage.getItem("universidades"); // Recupera os dados
-//   storage = JSON.parse(storage);
-//   if (storage == null) {
-//     storage = [];
-//   }
-//   console.log(storage);
-
-//   let form = document.querySelector("#formDados");
-
-//   let universidadesObj = {
-//     id: 1,
-//     nome: "PUC Minas",
-//     link: "https://www.pucminas.br",
-//     image:
-//       "https://upload.wikimedia.org/wikipedia/commons/b/b4/Entradapucminas.jpg",
-//     descricao: "Descrição da universidade...",
-//     ruf2019: {
-//       ensino: 50,
-//       pesquisa: 99,
-//       mercado: 6,
-//     },
-//     cursos: 130,
-//   };
-
-//   let index = 0;
-//   universidadesObj.id = storage.length; // TODO pegar o tamanho salvo no localstorage
-//   universidadesObj.nome = form.elements[index++].value;
-//   universidadesObj.link = form.elements[index++].value;
-//   universidadesObj.image = form.elements[index++].value;
-//   universidadesObj.descricao = form.elements[index++].value;
-//   universidadesObj.ruf2019.ensino = form.elements[index++].value;
-//   universidadesObj.ruf2019.mercado = form.elements[index++].value;
-//   universidadesObj.ruf2019.pesquisa = form.elements[index++].value;
-//   universidadesObj.cursos = form.elements[index++].value;
-
-//   storage.push(universidadesObj);
-
-//   console.log(storage);
-
-//   localStorage.setItem("universidades", JSON.stringify(storage));
-
-//   // pega o valor da entrada
-//   //   console.log(form.elements[6].value);
-// }
-
 /**
  * Salva o conteudo editado
  */
@@ -253,7 +206,7 @@ function saveEditedContent() {
 
     localStorage.setItem(page, JSON.stringify(newStorage));
 
-    window.location.href = "./crud-index.html";
+    window.location.href = `./crud-index.html?page=${page}`;
   }
 }
 
@@ -265,6 +218,7 @@ function deleteContent() {
   let page = new URL(document.location).searchParams.get("page"); // pega id na url
 
   var storage = window.localStorage.getItem(page); // pega local data
+  console.log("antes:", storage);
 
   if (storage != null) {
     let newStorage = JSON.parse(storage);
@@ -272,14 +226,22 @@ function deleteContent() {
     let index = -1;
 
     newStorage.forEach((element, i) => {
-      if (element.id == id) {
+      if (i == id) {
         index = i;
       }
     });
 
     newStorage.splice(index, 1); // 2nd parameter means remove one item only
 
+    newStorage = newStorage.map((element, i) => {
+      return {
+        ...element,
+        id: i + 1,
+      };
+    });
+
     localStorage.setItem(page, JSON.stringify(newStorage));
+    console.log("depois:", newStorage);
 
     window.location.href = "./crud-index.html";
   }
