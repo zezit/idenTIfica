@@ -5,7 +5,7 @@ const UNIVERSIDADES = 4;
 
 // alterna entre as páginas
 document
-  .querySelector(".container--opt")
+  .querySelector(".container--opt ul")
   .addEventListener("click", changePage, false);
 
 document.addEventListener("DOMContentLoaded", initPage, false);
