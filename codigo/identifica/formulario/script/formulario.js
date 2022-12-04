@@ -23,12 +23,13 @@ function initPage() {
     var indicator = "A";
 
     element.respostas.forEach((resp, respIndex) => {
-      todasRespostas += `<div class=${resp.length ? "" : "hide"}>
+      todasRespostas += `
+      <div class=${element.respostas.length ? "div-resp" : "hide"}>
             <input class="questions-radio" type="radio" id="question_${questionIndex}_a_${respIndex}" value="${respIndex}" name="question_${questionIndex}_st">
             <label class="questions-text" for="question_${questionIndex}_a_${respIndex}">${
-        "<strong>" + indicator + " - " + "</strong>" + resp
-      }</label>
-         </div>
+              "<strong>" + indicator + " - " + "</strong>" + resp
+            }</label>
+      </div>
         `;
       function nextLetter(indicator) {
         return indicator.replace(/([a-zA-Z])[^a-zA-Z]*$/, function (a) {
@@ -48,11 +49,18 @@ function initPage() {
     });
 
     newQuestion.innerHTML = `
-    <p class="question-st" id="question_0">
-      ${questionIndex + 1 + ") " + element.pergunta}
-    </p>
-    ${todasRespostas}
-    <br>
+    <div>
+      <img class="form-img" src="../imagens/form/${
+        questionIndex + 1
+      }.svg" alt="image${questionIndex + 1}">
+    </div>
+    <div>
+      <p class="question-st" id="question_0">
+        ${questionIndex + 1 + ") " + element.pergunta}
+      </p>
+      ${todasRespostas}
+      <br>
+    </div>
     `;
 
     container.appendChild(newQuestion);
