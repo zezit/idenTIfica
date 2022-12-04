@@ -94,5 +94,10 @@ function submmitFormTreat(event) {
     alert("Você precisa responder todas perguntas para obter um resultado!");
   } else {
     // Todas perguntas respondidas; tratar o resultado e redirencionar
+    treatResponses(allQuestions);
   }
+}
+
+function treatResponses(allQuestions) {
+  console.log(allQuestions);
 }
