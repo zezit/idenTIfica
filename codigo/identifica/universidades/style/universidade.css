@@ -149,6 +149,12 @@
   color: black;
 }
 
+.card-form-email-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*** responsividade ***/
 @media (max-width: 1440px) {
   .univ-image img {

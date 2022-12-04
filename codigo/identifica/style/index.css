@@ -72,10 +72,12 @@ nav {
 
 /*! mobile only */
 .options--container-mobile {
+  background-color: #2e3146;
   position: absolute;
   right: 0;
   display: none;
   justify-content: flex-end;
+  border-bottom-left-radius: 5px;
 }
 
 .menu-mobile {
