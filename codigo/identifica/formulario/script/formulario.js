@@ -68,6 +68,8 @@ function initPage() {
 
     container.appendChild(button);
   }
+
+  resWindow();
 }
 
 function submmitFormTreat(event) {

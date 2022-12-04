@@ -82,6 +82,7 @@ function initPage() {
 
 function windowSizeChange() {
   if (window.screen.width <= 750) {
+    // console.log("Window size analize");
     const newDesc = document.getElementsByClassName("desc-univ");
 
     for (let i = 0; i < newDesc.length; i++) {
@@ -106,7 +107,6 @@ function windowSizeChange() {
     for (let i = 0; i < aux.length; i++) {
       aux[i].classList.remove("hide");
     }
-
   } else {
     const div = document.querySelectorAll(".mobile-ruf-univ");
     for (let i = 0; i < div.length; i++) {
@@ -119,6 +119,8 @@ function windowSizeChange() {
       storage = [];
     }
   }
+
+  resWindow();
 }
 
 var elements = document.getElementsByClassName("open-more");
@@ -130,7 +132,7 @@ for (var i = 0; i < elements.length; i++) {
 function verMais() {
   const div =
     document.getElementsByClassName("uni--containers")[0].children[
-    parseInt(this.id) - 1
+      parseInt(this.id) - 1
     ];
 
   div.querySelector(".univ-image img").classList.add("show");
@@ -143,8 +145,10 @@ function verMais() {
     storage = [];
   }
 
-  const allDivs = document.getElementsByClassName("poster-univ")
+  const allDivs = document.getElementsByClassName("poster-univ");
   for (let i = 0; i < allDivs.length; i++) {
-    allDivs[i].getElementsByClassName("desc-univ")[0].innerHTML = `${storage[i].descricao}`
+    allDivs[i].getElementsByClassName(
+      "desc-univ"
+    )[0].innerHTML = `${storage[i].descricao}`;
   }
 }
