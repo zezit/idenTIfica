@@ -21,3 +21,12 @@ O *idenTIfica* consiste em uma plataforma para auxiliar jovens e adultos na esco
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+
+## Documentação do Projeto
+
+A documentação do projeto é composta pelos seguintes itens: 
+ - [Processo de Design Thinking](docs/concepcao/design%20thinking.pdf)
+ - [Relatório Técnico](docs/relatorio/Relatorio%20Tecnico%20-%20TEMPLATE.md)
+ - [Apresentação do Projeto](docs/apresentacao/apresentação.pptx)
+ - [Vídeo de Demonstração](https://youtube.com)
+
