@@ -19,72 +19,75 @@
 </head>
 
 <body>
-  <!-- Barra de navegação -->
-  <header>
-    <nav>
-      <a class="logo-container" href="#">
-        <img src="imagens/idenTIfica.svg" alt="logo-nav" />
-      </a>
+  <main>
+    <!-- Barra de navegação -->
+    <header>
+      <nav>
+        <a class="logo-container" href="">
+          <img src="./imagens/idenTIfica.svg" alt="logo-nav" />
+        </a>
 
-      <div class="side-options">
-        <div class="options--container">
-          <ul class="menu">
-            <li class="form-link">
-              <a href="./formulario/formulario.html"> Realizar Teste</a>
-            </li>
-            <li><a href=""> Graduações</a></li>
-            <li>
-              <a href="./universidades/universidades.html"> Universidades</a>
-            </li>
-          </ul>
+        <div class="side-options">
+          <div class="options--container">
+            <ul class="menu">
+              <li class="form-link">
+                <a href="./formulario/formulario.html"> Realizar Teste</a>
+              </li>
+              <li><a href="./graduacoes/graduacoes.html"> Graduações</a></li>
+              <li>
+                <a href="./universidades/universidades.html"> Universidades</a>
+              </li>
+            </ul>
+          </div>
+          <form class="search-form" role="search">
+            <button class="clear-button--search-bar" type="reset">
+              <img src="./imagens/close_search_bar.svg" alt="clear-icon" />
+            </button>
+            <input class="search-input" placeholder="Pesquisar" />
+            <button class="button--search-bar" type="submit">
+              <img src="./imagens/search-icon.svg" alt="search-icon" />
+            </button>
+            <div class="list-found hide"></div>
+          </form>
         </div>
-        <form class="search-form" role="search">
-          <button class="clear-button--search-bar" type="reset">
-            <img src="imagens/close_search_bar.svg" alt="clear-icon" />
+        <!-- mobile two options -->
+        <div class="side-options-mobile hide">
+          <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
+            <img src="./imagens/search-mob.svg" alt="search button" />
+          </a>
+          <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+            <img src="./imagens/menu.svg" alt="menu icon" />
+          </a>
+        </div>
+        <!-- mobile search bar -->
+        <form class="mob-search-form hide" role="search">
+          <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
+            <img src="./imagens/close_search_bar.svg" alt="clear-icon" />
           </button>
-          <input class="search-input" placeholder="Pesquisar" />
-          <button class="button--search-bar" type="submit">
-            <img src="imagens/search-icon.svg" alt="search-icon" />
+          <input class="mob-search-input" placeholder="Pesquisar" />
+          <button class="mob-button--search-bar" type="submit">
+            <img src="./imagens/search-icon.svg" alt="search-icon" />
           </button>
+          <div class="list-found-mob hide"></div>
         </form>
+      </nav>
+      <!-- mobile menu -->
+      <div class="options--container-mobile">
+        <ul class="menu-mobile">
+          <li class="form-link-mobile">
+            <a href="./formulario/formulario.html"> Realizar Teste</a>
+          </li>
+          <li><a href="./graduacoes/graduacoes.html"> Graduações</a></li>
+          <li>
+            <a href="./universidades/universidades.html"> Universidades</a>
+          </li>
+        </ul>
       </div>
-      <!-- mobile two options -->
-      <div class="side-options-mobile hide">
-        <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
-          <img src="imagens/search-mob.svg" alt="search button" />
-        </a>
-        <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
-          <img src="imagens/menu.svg" alt="menu icon" />
-        </a>
-      </div>
-      <!-- mobile search bar -->
-      <form class="mob-search-form hide" role="search">
-        <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
-          <img src="imagens/close_search_bar.svg" alt="clear-icon" />
-        </button>
-        <input class="mob-search-input" placeholder="Pesquisar" />
-        <button class="mob-button--search-bar" type="submit">
-          <img src="imagens/search-icon.svg" alt="search-icon" />
-        </button>
-      </form>
-    </nav>
-    <!-- mobile menu -->
-    <div class="options--container-mobile">
-      <ul class="menu-mobile">
-        <li class="form-link-mobile">
-          <a href="./formulario/formulario.html"> Realizar Teste</a>
-        </li>
-        <li><a href=""> Graduações</a></li>
-        <li>
-          <a href="./universidades/universidades.html"> Universidades</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <!-- Aqui irão as páginas -->
+    </header>
+    <!-- Aqui irão as páginas -->
 
-  <!-- <a href="universidades/universidades.html#3">FUMEC</a> -->
-
+    <!-- <section style="height: 1280px;"></section> -->
+  </main>
   <!-- footer -->
   <footer>
     <div class="footer--logo-container">
@@ -108,13 +111,13 @@
       <div class="footer--menu-grid">
         <ul class="footer-menu-grid-left">
           <li>
-            <a href=""> Home</a>
+            <a href="#"> Home</a>
           </li>
           <li class="footer--form-link">
             <a href="./formulario/formulario.html">Realizar Teste</a>
           </li>
           <li>
-            <a href=""> Graduações</a>
+            <a href="./graduacoes/graduacoes.html"> Graduações</a>
           </li>
         </ul>
         <ul class="footer-menu-grid-right">

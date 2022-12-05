@@ -19,98 +19,108 @@
 </head>
 
 <body>
-    <!-- Barra de navegação -->
-    <header>
-        <nav>
-            <a class="logo-container" href="../index.html">
-                <img src="../imagens/idenTIfica.svg" alt="logo-nav" />
-            </a>
+    <main>
+        <!-- Barra de navegação -->
+        <header>
+            <nav>
+                <a class="logo-container" href="../index.html">
+                    <img src="../imagens/idenTIfica.svg" alt="logo-nav" />
+                </a>
 
-            <div class="side-options">
-                <div class="options--container">
-                    <ul class="menu">
-                        <li class="form-link">
-                            <a href=""> Realizar Teste</a>
-                        </li>
-                        <li><a href=""> Graduações</a></li>
-                        <li>
-                            <a href="../universidades/universidades.html"> Universidades</a>
-                        </li>
-                    </ul>
+                <div class="side-options">
+                    <div class="options--container">
+                        <ul class="menu">
+                            <li class="form-link">
+                                <a href="#"> Realizar Teste</a>
+                            </li>
+                            <li><a href="../graduacoes/graduacoes.html"> Graduações</a></li>
+                            <li>
+                                <a href="../universidades/universidades.html"> Universidades</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="search-form" role="search">
+                        <button class="clear-button--search-bar" type="reset">
+                            <img src="../imagens/close_search_bar.svg" alt="clear-icon" />
+                        </button>
+                        <input class="search-input" placeholder="Pesquisar" />
+                        <button class="button--search-bar" type="submit">
+                            <img src="../imagens/search-icon.svg" alt="search-icon" />
+                        </button>
+                        <div class="list-found hide"></div>
+                    </form>
                 </div>
-                <form class="search-form" role="search">
-                    <button class="clear-button--search-bar" type="reset">
+                <!-- mobile two options -->
+                <div class="side-options-mobile hide">
+                    <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
+                        <img src="../imagens/search-mob.svg" alt="search button" />
+                    </a>
+                    <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+                        <img src="../imagens/menu.svg" alt="menu icon" />
+                    </a>
+                </div>
+                <!-- mobile search bar -->
+                <form class="mob-search-form hide" role="search">
+                    <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
                         <img src="../imagens/close_search_bar.svg" alt="clear-icon" />
                     </button>
-                    <input class="search-input" placeholder="Pesquisar" />
-                    <button class="button--search-bar" type="submit">
+                    <input class="mob-search-input" placeholder="Pesquisar" />
+                    <button class="mob-button--search-bar" type="submit">
                         <img src="../imagens/search-icon.svg" alt="search-icon" />
                     </button>
+                    <div class="list-found-mob hide"></div>
                 </form>
+            </nav>
+            <!-- mobile menu -->
+            <div class="options--container-mobile">
+                <ul class="menu-mobile">
+                    <li class="form-link-mobile">
+                        <a href="#"> Realizar Teste</a>
+                    </li>
+                    <li><a href="../graduacoes/graduacoes.html"> Graduações</a></li>
+                    <li>
+                        <a href="../universidades/universidades.html"> Universidades</a>
+                    </li>
+                </ul>
             </div>
-            <!-- mobile two options -->
-            <div class="side-options-mobile hide">
-                <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
-                    <img src="../imagens/search-mob.svg" alt="search button" />
-                </a>
-                <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
-                    <img src="../imagens/menu.svg" alt="menu icon" />
-                </a>
+        </header>
+
+        <!-- Aqui irão as páginas -->
+        <section>
+            <h1 class="page-title">FORMULÁRIO</h1>
+            <form class="form--container" action=""></form>
+        </section>
+
+        <section class="popup-result hide">
+            <div class="relative-close">
+                <a href="#" class="result-close-window"><img src="../imagens/close-button.png" alt=""></a>
             </div>
-            <!-- mobile search bar -->
-            <form class="mob-search-form hide" role="search">
-                <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
-                    <img src="../imagens/close_search_bar.svg" alt="clear-icon" />
-                </button>
-                <input class="mob-search-input" placeholder="Pesquisar" />
-                <button class="mob-button--search-bar" type="submit">
-                    <img src="../imagens/search-icon.svg" alt="search-icon" />
-                </button>
-            </form>
-        </nav>
-        <!-- mobile menu -->
-        <div class="options--container-mobile">
-            <ul class="menu-mobile">
-                <li class="form-link-mobile">
-                    <a href=""> Realizar Teste</a>
-                </li>
-                <li><a href=""> Graduações</a></li>
-                <li>
-                    <a href="../universidades/universidades.html"> Universidades</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+            <h1 class="result-title">Nome do curso</h1>
+            <img src="#" alt="" class="result-random-image">
+            <p class="result-description">Lorem ipsum dolor sit amet et dolore dolor invidunt sea diam rebum hendrerit
+                sanctus sanctus ea dolor. Erat est enim ea ipsum dolor consequat rebum at gubergren ipsum sea dolor
+                magna
+                ipsum duo tempor amet.
 
-    <!-- Aqui irão as páginas -->
-    <section>
-        <h1 class="page-title">FORMULÁRIO</h1>
-        <form class="form--container" action=""></form>
-    </section>
-
-    <section class="popup-result hide">
-        <div class="relative-close">
-            <a href="#" class="result-close-window"><img src="../imagens/close-button.png" alt=""></a>
-        </div>
-        <h1 class="result-title">Nome do curso</h1>
-        <img src="#" alt="" class="result-random-image">
-        <p class="result-description">Lorem ipsum dolor sit amet et dolore dolor invidunt sea diam rebum hendrerit
-            sanctus sanctus ea dolor. Erat est enim ea ipsum dolor consequat rebum at gubergren ipsum sea dolor magna
-            ipsum duo tempor amet.
-
-            Et ea sadipscing nonumy tincidunt no gubergren consetetur at rebum duis dolore aliquip erat ad kasd eum
-            accusam. Quis eirmod elitr. Accusam lorem sed te sea dolore accumsan sit euismod erat tempor aliquyam
-            nostrud stet laoreet sed amet tempor. Diam gubergren et vel dolore dolor eirmod eirmod voluptua labore
-            sanctus eum accusam erat nam iusto. Duis gubergren dolor sed. Stet accusam sit veniam dolores est ipsum
-            sanctus sed consetetur aliquam duis et ut. Diam et at quod. Vulputate blandit voluptua dolore luptatum dolor
-            sanctus invidunt sanctus stet kasd volutpat clita sanctus ipsum sea dolor. Duo nonumy nonumy et iusto minim
-            sea sanctus eros erat dolor zzril at elitr eros et sit erat elit. Stet ea ipsum nulla duo dolores et ipsum
-            iusto ea eirmod dolor. Clita et ipsum sanctus labore magna. Euismod erat id ipsum nulla at aliquyam. Amet
-            sanctus sadipscing sit ullamcorper amet ipsum nisl magna rebum. Ullamcorper erat sanctus illum sit. Et erat
-            eum commodo clita.</p>
-        <p class="result-redo-desc">Não ficou satisfeito com o resultado?</p>
-        <a href="./formulario.html" class="result-redo-button">Refazer o Teste</a>
-    </section>
+                Et ea sadipscing nonumy tincidunt no gubergren consetetur at rebum duis dolore aliquip erat ad kasd eum
+                accusam. Quis eirmod elitr. Accusam lorem sed te sea dolore accumsan sit euismod erat tempor aliquyam
+                nostrud stet laoreet sed amet tempor. Diam gubergren et vel dolore dolor eirmod eirmod voluptua labore
+                sanctus eum accusam erat nam iusto. Duis gubergren dolor sed. Stet accusam sit veniam dolores est ipsum
+                sanctus sed consetetur aliquam duis et ut. Diam et at quod. Vulputate blandit voluptua dolore luptatum
+                dolor
+                sanctus invidunt sanctus stet kasd volutpat clita sanctus ipsum sea dolor. Duo nonumy nonumy et iusto
+                minim
+                sea sanctus eros erat dolor zzril at elitr eros et sit erat elit. Stet ea ipsum nulla duo dolores et
+                ipsum
+                iusto ea eirmod dolor. Clita et ipsum sanctus labore magna. Euismod erat id ipsum nulla at aliquyam.
+                Amet
+                sanctus sadipscing sit ullamcorper amet ipsum nisl magna rebum. Ullamcorper erat sanctus illum sit. Et
+                erat
+                eum commodo clita.</p>
+            <p class="result-redo-desc">Não ficou satisfeito com o resultado?</p>
+            <a href="./formulario.html" class="result-redo-button">Refazer o Teste</a>
+        </section>
+    </main>
 
 
     <!-- footer -->
