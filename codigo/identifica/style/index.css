@@ -57,6 +57,7 @@ nav {
 .search-button-mobile {
   margin-right: 20px;
 }
+
 /*! end mobile only */
 
 .side-options {
@@ -104,6 +105,7 @@ nav {
 .show {
   display: flex !important;
 }
+
 /*! end mobile only */
 
 .menu {
@@ -137,6 +139,7 @@ nav {
 
 /* Barra de pesquisa */
 .search-form {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,6 +148,56 @@ nav {
   width: 320px;
   height: 28px;
   border-radius: 4px;
+}
+
+.list-found {
+  z-index: 0;
+  top: 0;
+  margin-top: 25px;
+  position: absolute;
+  background-color: #dbdffd;
+  width: 100%;
+  max-width: 318px;
+  box-shadow: 0 0 5px 0px rgb(87, 87, 87);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.list-found-mob {
+  z-index: 0;
+  top: 0;
+  right: auto;
+  left: auto;
+  margin-top: 44px;
+  position: absolute;
+  background-color: #dbdffd;
+  width: 93%;
+  box-shadow: 0 0 5px 0px rgb(87, 87, 87);
+}
+
+.list-found li,
+.list-found-mob li {
+  color: #000;
+  display: flex;
+  cursor: pointer;
+  border-bottom: .1px solid #0a142f52;
+}
+
+.list-found li:hover,
+.list-found-mob li:hover {
+  border-radius: 0%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #0a142f52;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-found li a,
+.list-found-mob li a {
+  padding: 6px 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #000;
 }
 
 .clear-button--search-bar,
@@ -185,6 +238,7 @@ nav {
   border: none;
   padding: 0 8px;
 }
+
 /*! end mobile only */
 
 .search-input {
@@ -389,6 +443,10 @@ footer {
 }
 
 @media (max-width: 1203px) {
+  .list-found {
+    font-size: small;
+  }
+
   nav {
     padding: 0 50px;
   }
@@ -425,6 +483,7 @@ footer {
     padding: 20px;
     justify-content: space-between;
   }
+
   .card--form {
     width: 90%;
   }
@@ -504,13 +563,16 @@ footer {
     font-size: 12px;
     font-weight: 400;
   }
+
   .card-form-email {
     padding: 0 5px;
   }
+
   .card-form-email-input {
     height: 50px;
     font-size: 15px;
   }
+
   .card-form-email-button {
     font-size: 13px;
     width: 110px;

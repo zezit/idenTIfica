@@ -1,14 +1,32 @@
+var blockClick = false;
 const container = document.querySelector(".form--container");
 
 document.addEventListener("DOMContentLoaded", initPage(), false);
-
-const submitFormBtn = document.querySelector(".form-submit");
-submitFormBtn.addEventListener("click", submmitFormTreat, false);
-
+document
+  .querySelector(".form-submit")
+  .addEventListener("click", submmitFormTreat, false);
 const closePopUp = document
   .querySelector(".result-close-window")
   .addEventListener("click", closeWindowResults, false);
 
+// para bloquear clicks atrás do popup
+document
+  .getElementsByTagName("section")[0]
+  .addEventListener("click", blockAllClicks, false);
+document
+  .getElementsByTagName("header")[0]
+  .addEventListener("click", blockAllClicks, false);
+document
+  .getElementsByTagName("footer")[0]
+  .addEventListener("click", blockAllClicks, false);
+
+function blockAllClicks(event) {
+  if (blockClick) {
+    console.log("BLOQUEADO");
+    event.stopImmediatePropagation();
+    event.preventDefault();
+  }
+}
 // Ler as universidades salvas e gerar seus componentes
 function initPage() {
   console.log("Iniciando Form page");
@@ -86,31 +104,33 @@ function initPage() {
 
 function submmitFormTreat(event) {
   event.preventDefault();
+  if (!blockClick) {
+    const allQuestions = document.getElementsByClassName("quest-container");
 
-  const allQuestions = document.getElementsByClassName("quest-container");
+    let checked = false;
 
-  let checked = false;
-
-  for (let i = 0; i < allQuestions.length; i++) {
-    checked = false;
-    for (let j = 1; j < allQuestions[i].children.length - 1; j++) {
-      // console.log(
-      //   "respostas da pergunta ",
-      //   i + 1,
-      //   ": ",
-      //   allQuestions[i].children[j]
-      // );
-      if (allQuestions[i].children[j].children[0].checked) {
-        checked = true;
+    for (let i = 0; i < allQuestions.length; i++) {
+      checked = false;
+      for (let j = 1; j < allQuestions[i].children.length - 1; j++) {
+        // console.log(
+        //   "respostas da pergunta ",
+        //   i + 1,
+        //   ": ",
+        //   allQuestions[i].children[j]
+        // );
+        if (allQuestions[i].children[j].children[0].checked) {
+          // console.log(allQuestions[i].children[j].children[0]);
+          checked = true;
+        }
       }
     }
-  }
 
-  if (!checked) {
-    alert("Você precisa responder todas perguntas para obter um resultado!");
-  } else {
-    // Todas perguntas respondidas; tratar o resultado e redirencionar
-    treatResponses(allQuestions);
+    if (!checked) {
+      alert("Você precisa responder todas perguntas para obter um resultado!");
+    } else {
+      // Todas perguntas respondidas; tratar o resultado e redirencionar
+      treatResponses(allQuestions);
+    }
   }
 }
 
@@ -120,7 +140,7 @@ function treatResponses(allQuestions) {
   let maiorPontuacao = {};
 
   let points = [
-    { name: "Ciencias da Computação", pontos: 0 },
+    { name: "Ciências da Computação", pontos: 0 },
     { name: "Sistemas de Informação", pontos: 0 },
     { name: "Engenharia de Software", pontos: 0 },
     { name: "Engenharia de Computação", pontos: 0 },
@@ -146,24 +166,20 @@ function treatResponses(allQuestions) {
       maiorPontuacao.iguais.push(i);
     }
   }
-
+  console.log(points);
   if (maiorPontuacao.iguais.length) {
     maiorPontuacao.index = maiorPontuacao.iguais[0];
   }
-
+  console.log(maiorPontuacao);
   popUpResult.classList.remove("hide");
   popUpResult.classList.add("show-popup");
-
-  // popUpResult.scrollIntoView({
-  //   block: "center",
-  //   behavior: "smooth",
-  //   inline: "start",
-  // });
 
   window.scrollTo({
     top: 80,
     behavior: "smooth",
   });
+
+  blockClick = true;
 
   document.getElementsByTagName("section")[0].classList.add("blur-page");
   document.getElementsByTagName("header")[0].classList.add("blur-page");
@@ -180,6 +196,22 @@ function fillPopUpResult(nome, janela) {
   janela.querySelector(
     ".result-random-image"
   ).src = `../imagens/form/${parseInt(1 + Math.random() * 11)}.svg`;
+
+  // Descrição do curso
+  let courseDescription = "";
+  var storage = localStorage.getItem("graduacoes"); // Recupera os dados
+  storage = JSON.parse(storage);
+  if (storage == null) {
+    storage = [];
+  }
+
+  for (let i = 0; i < storage.length; i++) {
+    if (nome.toUpperCase() == storage[i].nome.toUpperCase()) {
+      courseDescription = storage[i].descricao;
+      break;
+    }
+  }
+  janela.querySelector(".result-description").innerHTML = courseDescription;
 }
 
 function closeWindowResults() {
@@ -187,9 +219,10 @@ function closeWindowResults() {
 
   popUpResult.classList.add("hide");
   popUpResult.classList.remove("show-popup");
-  // popUpResult.scrollIntoView({ block: "center", behavior: "smooth" });
 
   document.getElementsByTagName("section")[0].classList.remove("blur-page");
   document.getElementsByTagName("header")[0].classList.remove("blur-page");
   document.getElementsByTagName("footer")[0].classList.remove("blur-page");
+
+  blockClick = false;
 }
