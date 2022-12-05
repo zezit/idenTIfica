@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "nome": "PUC Minas",
+    "link": "https://www.pucminas.br",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Entradapucminas.jpg",
+    "descricao": "Considerada uma das melhores universidades privadas do Brasil – é a única instituição privada de Minas Gerais a fazer parte do ranking das melhores universidades do mundo: o Times Higher Education.<br><br>A Universidade está presente em Minas Gerais em sete campi localizados nas cidades de Belo Horizonte, Betim, Contagem, Arcos, Poços de Caldas, Serro e Uberlândia, além de três unidades localizadas em Belo Horizonte – Barreiro, Praça da Liberdade e São Gabriel. Na graduação, são ofertados 109 cursos de bacharelado, 12 de graduação tecnológica e 11 cursos de licenciatura.",
+    "ruf2019": {
+      "ensino": 50,
+      "pesquisa": 99,
+      "mercado": 6
+    },
+    "cursos": 130
+  },
+  {
+    "id": 2,
+    "nome": "UFMG",
+    "link": "https://www.ufmg.br/",
+    "image": "https://ufmg.br/thumbor/8u8d_-jF4IAWALA655K71ru1R84=/38x0:2842x1772/952x600/https://ufmg.br/storage/6/8/2/6/68263306eba95ccfc0d6f2cf19411481_15027318836024_882385383.jpg",
+    "descricao": "Localizada na Região Sudeste, a mais industrializada do Brasil, a UFMG, instituição pública de ensino superior gratuito, é a mais antiga universidade do estado de Minas Gerais. Sua fundação ocorreu em 7 de setembro de 1927 com o nome Universidade de Minas Gerais (UMG). Quase um século após, a instituição é liderança regional e nacional em ensino, extensão, cultura, pesquisa científica e geração de patentes, em diversas áreas do conhecimento.",
+    "ruf2019": {
+      "ensino": 1,
+      "pesquisa": 7,
+      "mercado": 2
+    },
+    "cursos": 95
+  },
+  {
+    "id": 3,
+    "nome": "FUMEC",
+    "link": "http://www.fumec.br",
+    "image": "https://bhaz.com.br/wp-content/uploads/2022/06/Universidade-FUMEC_-Descubra-como-conseguir-bolsas-de-até-100-e-comece-a-estudar-ainda-em-2022.jpg",
+    "descricao": "Há mais dels 50 anos, a Universidade FUMEC dedica-se à formação não só de profissionais capacitados, como de cidadãos conscientes de seu papel na sociedade. A instituição conta com corpo docente predominantemente formado por mestres e doutores com sólida experiência acadêmica e profissional. A Universidade oferece, também, infraestrutura de alto nível, com excelentes instalações, bibliotecas e recursos tecnológicos de última geração.",
+    "ruf2019": {
+      "ensino": 86,
+      "pesquisa": 174,
+      "mercado": 56
+    },
+    "cursos": 40
+  },
+  {
+    "id": 4,
+    "nome": "UNIFENAS",
+    "link": "http://www.unifenas.br",
+    "image": "https://medicina.unifenas.br/img/Entrada%20UNIFENAS%202020%20BH.png",
+    "descricao": "A Universidade José do Rosário Vellano – UNIFENAS, idealizada e fundada pelo Professor Edson Antônio Velano, começou sua história em 22 de maio de 1972, quando os primeiros cursos foram autorizados. As Faculdades Integradas da Região de Alfenas, em 1988, passaram a se chamar Universidade de Alfenas – UNIFENAS, reconhecida pela Portaria 605/88 de 13/12/1988 do Ministério da Educação – MEC, publicada no Diário Oficial da União em 15/12/1988 e recredenciada em 2021 pela Portaria MEC n. 209, de 13 de abril de 2021, publicada no D.O.U. de 14 de abril de 2021 (página 113).",
+    "ruf2019": {
+      "ensino": 77,
+      "pesquisa": 118,
+      "mercado": 124
+    },
+    "cursos": 19
+  },
+  {
+    "id": 5,
+    "nome": "UEMG",
+    "link": "https://www.uemg.br",
+    "image": "https://assets.querobolsa.com.br/cover/wide_background/2580/cover_1630680540.jpg",
+    "descricao": "A UEMG foi criada em 1989, por disposição contida na Constituição do Estado. Como previsto quando de sua fundação, é uma Universidade multicampi, presente em 16 municípios de Minas Gerais. Na estrutura orgânica do Estado, a Universidade vincula-se à Secretaria de Estado de Educação – à qual compete formular e implementar políticas públicas que assegurem o desenvolvimento científico e tecnológico, a inovação e o ensino superior no Estado. ",
+    "ruf2019": {
+      "ensino": 90,
+      "pesquisa": 177,
+      "mercado": 124
+    },
+    "cursos": 122
+  }
+]
