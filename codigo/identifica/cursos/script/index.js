@@ -123,7 +123,7 @@ let products = {
 		// UNI-BH //
     {
 				//faculdade: "UNI-BH",
-		productName: "Jogos Digitais - UNI-BH",
+		productName: "JOGOS DIGITAIS - UNI-BH",
         category: "Presencial",
 		titulo: "Sobre o Curso:",
         price: "O curso superior de Tecnologia em Jogos Digitais capacita o profissional para atuar em projetos de jogos digitais, com o gerenciamento de equipes multidisciplinares, desenvolvimento de roteiro, cenário, personagem e mecânica para as mais diversas plataformas. Além de uma formação que permite um ingresso rápido no mercado de trabalho, o curso tem possibilitado a atuação dos profissionais em diversos segmentos, como a educação, por exemplo, indo muito além da indústria do entretenimento",
@@ -313,7 +313,6 @@ let products = {
 		image: "imagens/Anhanguera.jpg",
 		},
 		// Anhanguera FIM //
-		
   ],
 };
 for (let i of products.data) {
