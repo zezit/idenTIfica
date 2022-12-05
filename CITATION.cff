@@ -1,7 +1,13 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: LOCKEY
+title: idenTIfica
 authors:
+  - family-names: Mendes Dias
+    given-names: José Victor 
+  - family-names: Orselino de Magalhães
+    given-names: Lucas Henrique
+  - family-names: Meireles dos Santos
+    given-names: Mellyssa
   - name-suffix: Professor
     affiliation: PUC Minas
   - family-names: Lima Reis
@@ -15,9 +21,9 @@ authors:
     family-names: Alves Nogueira
     given-names: Simone 
 keywords:
-  - Educacional
-  - Segurança na Web
-repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/tiaw-template-2022-es
+  - Web Programming
+  - Cursos de TI
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2021-12-22
+date-released: 2021-12-05
