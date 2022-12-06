@@ -1,0 +1,440 @@
+<html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                                                                          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>idenTIfica</title>
+
+  <!-- link to local style -->
+  <link rel="stylesheet" href="style/cursos.css">
+  <link rel="stylesheet" href="style/mobile.css">
+  <link rel="stylesheet" href="style/index.css">
+  
+      <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+
+
+
+
+<style>
+* {
+  font-family: "Montserrat", “Arial”, “sans-serif”;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #12066aff;
+}
+
+/**********************************/
+/*          Styling Footer        */
+/**********************************/
+
+/*** Adding Styles to Company Details ***/
+
+.company-details{
+  overflow: hidden;
+  padding: 3em 0em;
+  background: #E3F0F7;
+  text-align: center;
+  margin-top: 5em;
+}
+
+#footer #col1,
+#footer #col2,
+#footer #col3{
+  float: left;
+  width: 320px;
+  padding: 0px 40px 0px 40px;
+}
+   
+#footer #icon{
+  display: block;
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
+/*** Adding Styles to Copyright Div ***/
+.copyright
+{
+  overflow: hidden;
+  padding: 3em 0em;
+  border-top: 20px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  background: #8799f2;;
+}
+   
+.copyright p
+{
+  letter-spacing: 1px;
+  font-size: 0.90em;
+  color: rgba(255, 255, 255, 0.6);
+}
+   
+.copyright a
+{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.contact{
+  margin: 0;
+  padding: 2em 0em 0em 0em;
+  list-style: none;
+}
+   
+ul.contact li{
+  display: inline-block;
+  padding: 0em 0.10em;
+  font-size: 1em;
+}
+
+ul.contact li a{
+  color: #FFF;
+  display: inline-block;
+  background: #8799f2;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+</style>
+
+
+
+  
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+  (function () {
+    function refreshCSS() {
+      var sheets = [].slice.call(document.getElementsByTagName("link"));
+      var head = document.getElementsByTagName("head")[0];
+      for (var i = 0; i < sheets.length; ++i) {
+        var elem = sheets[i];
+        var parent = elem.parentElement || head;
+        parent.removeChild(elem);
+        var rel = elem.rel;
+        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+        }
+        parent.appendChild(elem);
+      }
+    }
+    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+    var address = protocol + window.location.host + window.location.pathname + '/ws';
+    var socket = new WebSocket(address);
+    socket.onmessage = function (msg) {
+      if (msg.data == 'reload') window.location.reload();
+      else if (msg.data == 'refreshcss') refreshCSS();
+    };
+    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+      console.log('Live reload enabled.');
+      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+    }
+  })();
+}
+else {
+  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <header>
+    <nav>
+      <a class="logo-container show" href="#">
+        <img src="imagens/idenTIfica.svg" alt="logo-nav">
+      </a>
+
+      <div class="side-options">
+        <div class="options--container">
+          <ul class="menu">
+            <li class="form-link">
+              <a href=""> Realizar Teste</a>
+            </li>
+            <li><a href=""> Graduações</a></li>
+            <li>
+              <a href="./universidades/universidade.html"> Universidades</a>
+            </li>
+            <li><a href=""> Carreiras</a></li>
+            <li><a href=""> Sobre</a></li>
+          </ul>
+        </div>
+        <form class="search-form" role="search">
+          <button class="clear-button--search-bar" type="reset">
+            <img src="imagens/close_search_bar.svg" alt="clear-icon">
+          </button>
+          <input class="search-input" placeholder="Pesquisar">
+          <button class="button--search-bar" type="submit">
+            <img src="imagens/search-icon.svg" alt="search-icon">
+          </button>
+        </form>
+      </div>
+      <!-- mobile two options -->
+      <div class="side-options-mobile hide">
+        <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
+          <img src="imagens/search-mob.svg" alt="search button">
+        </a>
+        <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
+          <img src="imagens/menu.svg" alt="menu icon">
+        </a>
+      </div>
+      <!-- mobile search bar -->
+      <form class="mob-search-form hide" role="search">
+        <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
+          <img src="imagens/close_search_bar.svg" alt="clear-icon">
+        </button>
+        <input class="mob-search-input" placeholder="Pesquisar">
+        <button class="mob-button--search-bar" type="submit">
+          <img src="imagens/search-icon.svg" alt="search-icon">
+        </button>
+      </form>
+    </nav>
+    <!-- mobile menu -->
+    <div class="options--container-mobile hide">
+      <ul class="menu-mobile">
+        <li class="form-link-mobile">
+          <a href=""> Realizar Teste</a>
+        </li>
+        <li><a href=""> Graduações</a></li>
+        <li>
+          <a href="./universidades/universidade.html"> Universidades</a>
+        </li>
+        <li><a href=""> Carreiras</a></li>
+        <li><a href=""> Sobre</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Aqui irão as páginas -->
+
+<div class="how-section1">
+                  <div class="row">
+                      <div class="col-md-6 how-img" style="
+">
+                          <img src="imagens/UNI-BH.jpg" class=" img-fluid" alt="">
+                      </div>
+                      <div class="col-md-6">
+                          <h4 class="subheading"><br>BANCOS DE DADOS: DATA SCIENCE, BIG DATA BI UNI-BH</h4>
+                      <p class="text-muted">O nosso curso tecnológico de Banco de Dados é ideal para os profissionais que querem entender as novas demandas do mercado, que está cada vez mais digital e necessitando de bons profissionais para atuar nele.
+                        O armazenamento de dados em sistemas e nuvens abre todo um novo campo de trabalho para os formados na área de Tecnologia, e ter uma sólida formação auxilia o ingresso e ascensão no mercado de trabalho.</p>
+                      </div>
+                      </div>
+                  </div>
+
+<div class="row" style="margin-left: 16px;margin-top: 10PX;">
+                        <h5 class="city">Modalidade:</h5>
+  <p>EAD, Presencial</p>
+  <h5 class="city">Campus:</h5>
+  <p>UniBH - Campus Buritis</p>
+  <h5 class="city">Duração</h5>
+  <p>4 anos</p>
+ </div>   
+
+<script src="script.js"></script>
+
+
+                  
+
+<div class="card--form">
+  <h2 class="card--form-title">
+    Ainda com dúvidas sobre qual curso escolher?
+  </h2>
+  <div class="card--form-descricao-container">
+    <p class="card--form-descricao">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      vitae ipsum sit amet sem elementum mollis. Ut consectetur massa
+      nibh, a commodo nibh congue eget. Proin tincidunt nisi tortor, nec
+    </p>
+  </div>
+  <form action="#" class="card-form-email">
+    <input type="email" name="" class="card-form-email-input" placeholder="Insira seu email">
+    <a href="#"><button class="card-form-email-button" type="submit">
+        Realizar Teste
+      </button></a>
+  </form>
+</div>
+
+<!-- </div> -->
+
+
+<!-- footer -->
+<footer>
+<div class="footer--logo-container">
+<img src="imagens/idenTIfica-blue.svg" alt="logo-nav" width="160">
+</div>
+<div class="footer--menu-container">
+<ul class="footer--menu">
+  <li><a href=""> Home</a></li>
+  <li class="footer--form-link">
+    <a href="">Realizar Teste</a>
+  </li>
+  <li><a href=""> Graduações</a></li>
+  <li>
+    <a href="./universidades/universidade.html"> Universidades</a>
+  </li>
+  <li><a href=""> Carreiras</a></li>
+  <li><a href=""> Sobre</a></li>
+</ul>
+
+<div class="footer--menu-grid">
+  <ul class="footer-menu-grid-left">
+    <li><a href=""> Home</a></li>
+    <li class="footer--form-link">
+      <a href="">Realizar Teste</a>
+    </li>
+    <li><a href=""> Graduações</a></li>
+  </ul>
+  <ul class="footer-menu-grid-right">
+    <li>
+      <a href="./universidades/universidade.html"> Universidades</a>
+    </li>
+    <li><a href=""> Carreiras</a></li>
+    <li><a href=""> Sobre</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<div class="footer--puc-link">
+<a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="https://www.pucminas.br"></a>
+<img src="imagens/puc-logo.svg" alt="puc-logo">
+<span>PUC Minas</span>
+
+</div>
+</footer>
+<!--<script src="script.js"></script>-->
+<script src="script/index.js"></script>
+<script src="script/script.js"></script>
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
