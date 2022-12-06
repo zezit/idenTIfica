@@ -12,7 +12,7 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
-  color: #dbdffd;
+  color: #646fd4;
   box-sizing: border-box;
 }
 
@@ -57,6 +57,7 @@ nav {
 .search-button-mobile {
   margin-right: 20px;
 }
+
 /*! end mobile only */
 
 .side-options {
@@ -102,6 +103,7 @@ nav {
 .show {
   display: flex !important;
 }
+
 /*! end mobile only */
 
 .menu {
@@ -183,6 +185,7 @@ nav {
   border: none;
   padding: 0 8px;
 }
+
 /*! end mobile only */
 
 .search-input {
@@ -304,14 +307,9 @@ nav {
 }
 
 /* footer style */
-body {
-  /* position: relative; */
-  min-height: 100vh;
-}
-
 footer {
-  /* position: absolute;
-  bottom: 0; */
+  position: relative;
+  bottom: 0;
   width: 100%;
   user-select: none;
   background-color: var(--light-grey);
@@ -356,7 +354,6 @@ footer {
 }
 
 .footer--puc-link a {
-  cursor: pointer;
   display: flex;
   align-items: center;
   margin-top: 21px;
@@ -423,8 +420,9 @@ footer {
     padding: 20px;
     justify-content: space-between;
   }
+
   .card--form {
-    width: 90%;
+    width: 70%;
   }
 
   .card--form-descricao-container {
@@ -487,7 +485,7 @@ footer {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 460px) {
   .card--form {
     padding: 14px;
   }
@@ -498,17 +496,20 @@ footer {
   }
 
   .card--form-descricao {
-    margin: 14px 0;
+    margin: 5px 0;
     font-size: 12px;
     font-weight: 400;
   }
+
   .card-form-email {
     padding: 0 5px;
   }
+
   .card-form-email-input {
     height: 50px;
     font-size: 15px;
   }
+
   .card-form-email-button {
     font-size: 13px;
     width: 110px;
@@ -521,4 +522,14 @@ footer {
   .logo-container img {
     width: 120px;
   }
+}
+
+.menu-mobile-icon {
+  width: 40px;
+  display: block;
+}
+
+.search-button-mobile {
+  width: 20px;
+  display: block;
 }
