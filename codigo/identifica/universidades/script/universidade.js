@@ -1,3 +1,5 @@
+import data from "../data/dados.json" assert { type: "json" };
+
 const container = document.querySelector(".uni--containers");
 
 var cards = 0;
@@ -9,8 +11,12 @@ window.addEventListener("resize", windowSizeChange, false);
 function initPage() {
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+
+  if (storage.length == 0) {
     storage = [];
+    localStorage.setItem("universidades", JSON.stringify(data));
+    storage = localStorage.getItem("universidades"); // Recupera os dados
+    storage = JSON.parse(storage);
   }
 
   storage.forEach((element) => {
@@ -115,7 +121,7 @@ function windowSizeChange() {
 
     var storage = localStorage.getItem("universidades"); // Recupera os dados
     storage = JSON.parse(storage);
-    if (storage == null) {
+    if (storage.length == 0) {
       storage = [];
     }
   }
@@ -141,7 +147,7 @@ function verMais() {
 
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  if (storage.length == 0) {
     storage = [];
   }
 

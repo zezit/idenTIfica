@@ -1,3 +1,5 @@
+import data from "../data/dados.json" assert { type: "json" };
+
 var blockClick = false;
 const container = document.querySelector(".form--container");
 
@@ -32,8 +34,12 @@ function initPage() {
   console.log("Iniciando Form page");
   var storage = localStorage.getItem("formulario"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  console.log("storage", storage)
+  if (storage.length == 0) {
     storage = [];
+    localStorage.setItem("formulario", JSON.stringify(data));
+    storage = localStorage.getItem("formulario"); // Recupera os dados
+    storage = JSON.parse(storage);
   }
 
   storage.forEach((element, questionIndex) => {
@@ -201,7 +207,7 @@ function fillPopUpResult(nome, janela) {
   let courseDescription = "";
   var storage = localStorage.getItem("graduacoes"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  if (storage.length == 0) {
     storage = [];
   }
 

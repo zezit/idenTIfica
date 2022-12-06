@@ -154,7 +154,7 @@ function showUniversidade() {
 
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  if (storage.length == 0) {
     storage = [];
   }
 
@@ -190,7 +190,7 @@ function showFormulario() {
 
   var storage = localStorage.getItem("formulario"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  if (storage.length == 0) {
     storage = [];
   }
 
@@ -230,7 +230,7 @@ function addNewItem() {
   var page = elemento.classList[0];
   var storage = localStorage.getItem(page); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null) {
+  if (storage.length == 0) {
     storage = [];
   }
   console.log(storage);

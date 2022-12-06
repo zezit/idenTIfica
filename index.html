@@ -13,9 +13,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./tela_inicial/css/styles.css" />
-  <link rel="stylesheet" href="./style/index.css" />
-  <link rel="shortcut icon" href="./imagens/title-LOGO.png" type="image/x-icon">
+  <link rel="stylesheet" href="./codigo/identifica/style/index.css" />
+  <link rel="stylesheet" href="./codigo/identifica/tela_inicial/css/styles.css" />
+  <link rel="shortcut icon" href="./codigo/identifica/imagens/title-LOGO.png" type="image/x-icon">
 
 </head>
 
@@ -25,8 +25,8 @@
     <section class="body-content">
       <header>
         <nav>
-          <a class="logo-container" href="./index.html">
-            <img src="./imagens/idenTIfica.svg" alt="logo-nav" />
+          <a class="logo-container" href="">
+            <img src="./codigo/identifica/imagens/idenTIfica.svg" alt="logo-nav" />
           </a>
 
           <div class="side-options">
@@ -35,22 +35,22 @@
                 <li class="form-link">
                   <a href="#"> Realizar Teste</a>
                 </li>
-                <li><a href="./graduacoes/graduacoes.html"> Graduações</a></li>
+                <li><a href="./codigo/identifica/graduacoes/graduacoes.html"> Graduações</a></li>
                 <li>
-                  <a href="./universidades/universidades.html"> Universidades</a>
+                  <a href="./codigo/identifica/universidades/universidades.html"> Universidades</a>
                 </li>
                 <li>
-                  <a href="login/login.html">Login</a>
+                  <a href="/codigo/identifica/login/login.html">Login</a>
                 </li>
               </ul>
             </div>
             <form class="search-form" role="search">
               <button class="clear-button--search-bar" type="reset">
-                <img src="./imagens/close_search_bar.svg" alt="clear-icon" />
+                <img src="./codigo/identifica/imagens/close_search_bar.svg" alt="clear-icon" />
               </button>
               <input class="search-input" placeholder="Pesquisar" />
               <button class="button--search-bar" type="submit">
-                <img src="./imagens/search-icon.svg" alt="search-icon" />
+                <img src="./codigo/identifica/imagens/search-icon.svg" alt="search-icon" />
               </button>
               <div class="list-found hide"></div>
             </form>
@@ -58,26 +58,40 @@
           <!-- mobile two options -->
           <div class="side-options-mobile hide">
             <a onclick="onclickSearchMobile()" href="#" class="search-button-mobile">
-              <img src="./imagens/search-mob.svg" alt="search button" />
+              <img src="./codigo/identifica/imagens/search-mob.svg" alt="search button" />
             </a>
             <a onclick="onclickMenuMobile()" href="#" class="menu-mobile-icon">
-              <img src="./imagens/menu.svg" alt="menu icon" />
+              <img src="./codigo/identifica/imagens/menu.svg" alt="menu icon" />
             </a>
           </div>
           <!-- mobile search bar -->
           <form class="mob-search-form hide" role="search">
             <button class="mob-clear-button--search-bar" type="reset" onclick="hideMobileSearch()">
-              <img src="./imagens/close_search_bar.svg" alt="clear-icon" />
+              <img src="./codigo/identifica/imagens/close_search_bar.svg" alt="clear-icon" />
             </button>
             <input class="mob-search-input" placeholder="Pesquisar" />
             <button class="mob-button--search-bar" type="submit">
-              <img src="./imagens/search-icon.svg" alt="search-icon" />
+              <img src="./codigo/identifica/imagens/search-icon.svg" alt="search-icon" />
             </button>
             <div class="list-found-mob hide"></div>
           </form>
         </nav>
         <!-- mobile menu -->
-
+        <!-- mobile menu -->
+        <div class="options--container-mobile">
+          <ul class="menu-mobile">
+            <li class="form-link-mobile">
+              <a href="./codigo/identifica/formulario/formulario.html"> Realizar Teste</a>
+            </li>
+            <li><a href="./codigo/identifica/graduacoes/graduacoes.html"> Graduações</a></li>
+            <li>
+              <a href="./codigo/identifica/universidades/universidades.html"> Universidades</a>
+            </li>
+            <li>
+              <a href="./codigo/identifica/login/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
       </header>
       <!-- Header-->
       <header class="bg-dark py-5">
@@ -85,8 +99,8 @@
           <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5 text-center text-xl-start">
-                <h1 class="display-5 fw-bolder text-white mb-2"> <img src="imagens/idenTIfica-blue.svg" alt="logo-nav"
-                    width="360" style="
+                <h1 class="display-5 fw-bolder text-white mb-2"> <img
+                    src="./codigo/identifica/imagens/idenTIfica-blue.svg" alt="logo-nav" width="360" style="
     filter: sepia(60%);
 "></h1>
                 <p class="lead fw-normal text-white-50 mb-4">Preparado? Então, na IdenTIfica vamos separar todos os
@@ -158,7 +172,7 @@
           <div class="row gx-5">
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="imagens/not3.jpg" alt="...">
+                <img class="card-img-top" src="./codigo/identifica/imagens/not3.jpg" alt="...">
                 <div class="card-body p-4">
                   <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticia</div>
                   <a class="text-decoration-none link-dark stretched-link" href="#!">
@@ -171,7 +185,7 @@
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle me-3" src="imagens/g1.png" alt="...">
+                      <img class="rounded-circle me-3" src="./codigo/identifica/imagens/g1.png" alt="...">
                       <div class="small">
                         <div class="fw-bold">G1</div>
                         <div class="text-muted">15 Novembro, 2022</div>
@@ -183,7 +197,7 @@
             </div>
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="imagens/not2.jpg" alt="...">
+                <img class="card-img-top" src="./codigo/identifica/imagens/not2.jpg" alt="...">
                 <div class="card-body p-4">
                   <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticia</div>
                   <a class="text-decoration-none link-dark stretched-link" href="#!">
@@ -197,7 +211,7 @@
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle me-3" src="imagens/g1.png" alt="...">
+                      <img class="rounded-circle me-3" src="./codigo/identifica/imagens/g1.png" alt="...">
                       <div class="small">
                         <div class="fw-bold">G1</div>
                         <div class="text-muted">15 Novembro, 2022</div>
@@ -209,7 +223,7 @@
             </div>
             <div class="col-lg-4 mb-5">
               <div class="card h-100 shadow border-0">
-                <img class="card-img-top" src="imagens/not1.jpg" alt="...">
+                <img class="card-img-top" src="./codigo/identifica/imagens/not1.jpg" alt="...">
                 <div class="card-body p-4">
                   <div class="badge bg-primary bg-gradient rounded-pill mb-2">Noticia</div>
                   <a class="text-decoration-none link-dark stretched-link" href="#!">
@@ -222,7 +236,7 @@
                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                   <div class="d-flex align-items-end justify-content-between">
                     <div class="d-flex align-items-center">
-                      <img class="rounded-circle me-3" src="imagens/g1.png" alt="...">
+                      <img class="rounded-circle me-3" src="./codigo/identifica/imagens/g1.png" alt="...">
                       <div class="small">
                         <div class="fw-bold">G1</div>
                         <div class="text-muted">15 Novembro, 2022</div>
@@ -250,7 +264,7 @@
       </p>
     </div>
     <form action="#" class="card-form-email">
-      <a href="../formulario/formulario.html" class="card-form-email-button">
+      <a href="./codigo/identifica/formulario/formulario.html" class="card-form-email-button">
         <!-- <button class="card-form-email-button"> -->
         Realizar Teste
         <!-- </button> -->
@@ -260,7 +274,7 @@
 
   <footer>
     <div class="footer--logo-container">
-      <img src="./imagens/idenTIfica-blue.svg" alt="logo-nav" width="160" />
+      <img src="./codigo/identifica/imagens/idenTIfica-blue.svg" alt="logo-nav" width="160" />
     </div>
     <div class="footer--menu-container">
       <ul class="footer--menu">
@@ -268,37 +282,37 @@
           <a href="">Home</a>
         </li>
         <li class="footer--form-link">
-          <a href="./formulario/formulario.html">Realizar Teste</a>
+          <a href="./codigo/identifica/formulario/formulario.html">Realizar Teste</a>
         </li>
         <li>
-          <a href="./graduacoes/graduacoes.html"> Graduações</a>
+          <a href="./codigo/identifica/graduacoes/graduacoes.html"> Graduações</a>
         </li>
         <li>
-          <a href="./universidades/universidades.html"> Universidades</a>
+          <a href="./codigo/identifica/universidades/universidades.html"> Universidades</a>
         </li>
       </ul>
       <div class="footer--menu-grid">
         <ul class="footer-menu-grid-left">
           <li>
-            <a href="./index.html"> Home</a>
+            <a href=""> Home</a>
           </li>
           <li class="footer--form-link">
-            <a href="./formulario/formulario.html">Realizar Teste</a>
+            <a href="./codigo/identifica/formulario/formulario.html">Realizar Teste</a>
           </li>
           <li>
-            <a href="./graduacoes/graduacoes.html"> Graduações</a>
+            <a href="./codigo/identifica/graduacoes/graduacoes.html"> Graduações</a>
           </li>
         </ul>
         <ul class="footer-menu-grid-right">
           <li>
-            <a href="./universidades/universidades.html"> Universidades</a>
+            <a href="./codigo/identifica/universidades/universidades.html"> Universidades</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="footer--puc-link">
       <a rel="noopener noreferrer" class="nome-univ name-univ-top" target="_blank" href="https://www.pucminas.br">
-        <img src="./imagens/puc-logo.svg" alt="puc-logo" />
+        <img src="./codigo/identifica/imagens/puc-logo.svg" alt="puc-logo" />
         <span>PUC Minas</span>
       </a>
     </div>
@@ -307,8 +321,8 @@
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
-  <script src="js/scripts.js"></script>
-  <script src="./tela_inicial/js/scripts.js"></script>
+  <script src="./codigo/identifica/script/index.js"></script>
+  <script src="./identifica/tela_inicial/js/scripts.js"></script>
 
 </body>
 
