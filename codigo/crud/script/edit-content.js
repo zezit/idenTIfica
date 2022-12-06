@@ -250,7 +250,7 @@ function deleteContent() {
 function getStoredData(id, page) {
   var storage = localStorage.getItem(page); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage.length == 0) {
+  if (storage.length == 0 || storage== null) {
     storage = [];
   }
   storage = storage[id];

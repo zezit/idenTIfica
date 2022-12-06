@@ -35,7 +35,7 @@ function initPage() {
   var storage = localStorage.getItem("formulario"); // Recupera os dados
   storage = JSON.parse(storage);
   console.log("storage", storage)
-  if (storage.length == 0) {
+  if (storage.length == 0 || storage== null) {
     storage = [];
     localStorage.setItem("formulario", JSON.stringify(data));
     storage = localStorage.getItem("formulario"); // Recupera os dados
@@ -207,7 +207,7 @@ function fillPopUpResult(nome, janela) {
   let courseDescription = "";
   var storage = localStorage.getItem("graduacoes"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage.length == 0) {
+  if (storage.length == 0 || storage== null) {
     storage = [];
   }
 
