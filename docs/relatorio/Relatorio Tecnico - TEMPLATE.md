@@ -306,10 +306,16 @@ Para hospedagem, optou-se por duas ferramentas gratuitas. A decisão de utilizar
 # Referências
 
 
-⦁	TRELLO. Trello. Disponível em: ⦁	www.trello.com. Acesso: 02 dez. 2022
-⦁	GitHub. GitHub. Disponível em: ⦁	www.github.com. Acesso: 02 dez. 2022
+⦁	TRELLO. Trello. Disponível em: 	www.trello.com. Acesso: 02 dez. 2022
+
+⦁	GitHub. GitHub. Disponível em: 	www.github.com. Acesso: 02 dez. 2022
+
 ⦁	Roger-that flow: um uso aprimorado do git-flow. Daniel Almeida Luz. Disponível em: https://www.bdm.unb.br/bitstream/10483/21938/1/2018_DanielAlmeidaLuz_tcc.pdf . Acesso: 02 dez. 2022
-⦁	BOOTSTRAP. About. Disponível em: ⦁	https://getbootstrap.com/⦁	docs⦁	/5/⦁	about⦁	/overview/. Acesso em: 02 dez. 2022. 
-⦁	Jquery. Jquery. Disponível em: https://jquery.com/ . Acesso em: 02 dez. 2022
+
+⦁	BOOTSTRAP. About. Disponível em: 	https://getbootstrap.com/⦁	docs⦁	/5/⦁	about⦁	/overview/. Acesso em: 02 dez. 2022. 
+
+⦁	Jquery. Disponível em: https://jquery.com/ . Acesso em: 02 dez. 2022
+
 ⦁	DATATABLES. DataTables. Disponível em: https://datatables.net/. Acesso em: 02 dez. 2022.
+
 ⦁	OFICINAS DE ALGORITIMOS COM ESTUDANTES DO SEGUNDO GRAU: UMA PESQUISA AÇÃO. Carlos Eduardo, Dagoberto Melo. Disponível em: https://repositorio.animaeducacao.com.br/bitstream/ANIMA/13748/1/TCC%20-%20Carlos%20e%20Dagoberto.pdf . Acesso em: 02 dez. 2022.
