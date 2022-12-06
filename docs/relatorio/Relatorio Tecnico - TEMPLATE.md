@@ -10,11 +10,8 @@ Engenharia de Software
 ## Participantes
 
 - Alexandre Bernardes Alves Fernandes
-- José Carlos Ferreira de Andrade
 - Jose Victor Mendes Dias
 - Lucas Henrique Orselino de Magalhães
-- Mellyssa Meireles dos Santos
-- Vinicius Reggiani Lima
 
 # Estrutura do Documento
 
@@ -36,11 +33,11 @@ Engenharia de Software
 - [Projeto de Interface](#projeto-de-interface)
   - [User Flow](#user-flow)
   - [Wireframes](#wireframes)
+  - [Protótipo Interativo](#protóipo-interativo)
 - [Metodologia](#metodologia)
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [**############## SPRINT 1 ACABA AQUI #############**](#-sprint-1-acaba-aqui-)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
@@ -190,6 +187,11 @@ Criamos uma interface simples e intuitiva com informações basicas sobre as gra
 
 ![Sobre nós](./images/about.jpg)
 
+## Protótipo Interativo
+
+Utilizamos da plataforma Figma e suas demais funcionalidades para elaborar o design interativo inicial do nosso website, com diversos recursos já implementados.
+- [Protótipo Interativo](https://www.figma.com/proto/EjdIGbBKGuNaYn34dYKEwA/Prot%C3%B3tipo---Sprint-3?page-id=0%3A1&node-id=1%3A5&viewport=546%2C833%2C0.08&scaling=scale-down&starting-point-node-id=1%3A5)
+
 # Metodologia
 
 usamos as metodologias Kamban, getting things done e scrum.
@@ -201,10 +203,7 @@ usamos as metodologias Kamban, getting things done e scrum.
 |-------|-------------------------|----|
 | José Victor Mendes Dias |Equipe | divisão de tarefas, protótipo, wireframe |
 |Mellyssa Meireles dos Santos | Equipe | apresentação, documentação |
-| José Carlos Ferreira de Andrade | Equipe | documentação, wireframe |
 | Lucas Henrique Orselino de Magalhães | Equipe | protótipo, documentação, wireframe |
-| Vinicius Reggiani Lima | Equipe | wireframe |
-| Alexandre Bernardes Alves Fernandes | Equipe | ------ |
 
 
 ## Ferramentas
@@ -213,7 +212,7 @@ usamos as metodologias Kamban, getting things done e scrum.
 |-----------|-------------------------|---------------|
 |Processo de Design Thinking  | Miro | (https://miro.com/app/board/uXjVPY9Ap-M=/) | 
 |Repositório de código | GitHub | (https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-plf-es-2022-2-ti1-grupo-7) | 
-|Protótipo Interativo |  Figma | (https://www.figma.com/proto/aIXiW6Uf9M1WIz4gpMNFsd/Protótipo---Escolha-de-cursos-TI?node-id=1%3A5&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5) | 
+|Protótipo Interativo |  Figma | (https://www.figma.com/) | 
 
 
 ## Controle de Versão
@@ -221,9 +220,6 @@ usamos as metodologias Kamban, getting things done e scrum.
 Definimos primeiro o que seria feito através de um brainstorm, vimos as ferramentas que seriam usadas e o que seria possível implementar no projeto. As funções foram definidas mediante as habilidades individuais dos integrantes do projeto, hospedamos o projeto na plataforma Github para unificar todas as informações. A branch master é utilizada como a central do projeto e deve ser sempre a mais atualizada.  
 
 Inicialmente, cada membro do grupo deve organizar as suas tarefas em sua branch específica e após a finalização das atividades, fazer um merge com a branch master. Para fazer alterações na master, primeiro é necessário atualizar a sua branch com os commits da master, para não ocorrer erros.
-
-
-# **############## SPRINT 1 ACABA AQUI #############**
 
 
 # Projeto da Solução
@@ -319,3 +315,5 @@ Para hospedagem, optou-se por duas ferramentas gratuitas. A decisão de utilizar
 ⦁	DATATABLES. DataTables. Disponível em: https://datatables.net/. Acesso em: 02 dez. 2022.
 
 ⦁	OFICINAS DE ALGORITIMOS COM ESTUDANTES DO SEGUNDO GRAU: UMA PESQUISA AÇÃO. Carlos Eduardo, Dagoberto Melo. Disponível em: https://repositorio.animaeducacao.com.br/bitstream/ANIMA/13748/1/TCC%20-%20Carlos%20e%20Dagoberto.pdf . Acesso em: 02 dez. 2022.
+
+⦁	Ranking de universidades. Disponível em: https://ruf.folha.uol.com.br/2019/ranking-de-universidades/principal/ . Acesso em: 8 set. 2022.
