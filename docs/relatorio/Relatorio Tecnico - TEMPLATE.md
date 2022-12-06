@@ -228,32 +228,34 @@ Inicialmente, cada membro do grupo deve organizar as suas tarefas em sua branch 
 
 # Projeto da Solução
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
 ## Tecnologias Utilizadas
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O ambiente utilizado para a programação foi o Visual Studio Code, uma IDE (Integrated Development Environment) utilizada para edição de código-fonte.
+Desenvolvido pela Microsoft para Windows, Linux e macOS e lançado em 2015, o Visual Studio Code é um software livre e de código aberto que inclui suporte para depuração e refatoração do código. Sendo um editor de código-fonte, torna-se possível programar em inúmeras linguagens, incluindo Dart.
+Foram utilizados também os softwares Dia (DIA WEBSITE, 2020) e Miro (MIRO WEBSITE, 2020), aplicações gratuitas para desenho de diagramas.
 
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+Estarão listadas outras tecnologias e bibliotecas utilizadas para o desenvolvimento do sistema, assim como suas funções.
+
+⦁	GitHub:  plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git (GITHUB WEBSITE, 2020), utilizada para versionamento do código do projeto;
+
+⦁	Trello: Aplicação de gerenciamento de projeto que facilita a visualização de tarefas e seu estado de produção a partir de um quadro Kanban (TRELLO WEBSITE, 2020). Utilizado para organização, mantendo os orientadores informados sobre o andamento do projeto;
+
+⦁	Kanban: Metodologia ágile visual adotada para o desenvolvimento do sistema, auxiliando no controle de produção ou gestão de tarefas utilizando um sistema de colunas representando o estado de cada tarefa. As colunas são: A fazer, Em execução e Feito (ARTIA WEBSITE, 2019). 
+
+⦁	JavaScript: Linguagem capaz de executar scripts do lado do usuário (DEVELOPER MOZILLA, 2020);
+
+⦁	HTML: Linguagem de marcação utilizada para desenvolver o corpo de páginas web.
+
+⦁	CSS: É uma folha de estilização de aparência em páginas web que utilizam HTML, XML e XHTML para o desenvolvimento (SILVA, 2008);
+
+⦁	Bootstrap: Um framework web para desenvolvimento de layouts e telas de sistema web, facilitando o desenvolvimento do front-end através de classes CSS (WIKIPÉDIA, 2020), utilizado para estilização das interfaces de usuário do sistema web do projeto;
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+No projeto utilizou-se a distribuição de pastas no padrão mvc (Model, View, Control), separando os arquivos de visualização (HTML e CSS) dos arquivos que controlam quais informações serão exibidas (JavaScript). Para armazenamento de informações, utilizou-se o armazenamento local do navegador.
+Para hospedagem, optou-se por duas ferramentas gratuitas. A decisão de utilizar de duas ferramentas se embasou nos testes futuros, que contabilizariam a performance de cada hospedagem. As hospedagens utilizadas foram o Github Pages, funcionalidade integrada ao GitHub que permite hospedar códigos de determinado repositório.
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
+
 > **Exemplo do diagrama de Arquitetura**:
 > 
 > ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
@@ -303,11 +305,11 @@ Inicialmente, cada membro do grupo deve organizar as suas tarefas em sua branch 
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
 
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+⦁	TRELLO. Trello. Disponível em: ⦁	www.trello.com. Acesso: 02 dez. 2022
+⦁	GitHub. GitHub. Disponível em: ⦁	www.github.com. Acesso: 02 dez. 2022
+⦁	Roger-that flow: um uso aprimorado do git-flow. Daniel Almeida Luz. Disponível em: https://www.bdm.unb.br/bitstream/10483/21938/1/2018_DanielAlmeidaLuz_tcc.pdf . Acesso: 02 dez. 2022
+⦁	BOOTSTRAP. About. Disponível em: ⦁	https://getbootstrap.com/⦁	docs⦁	/5/⦁	about⦁	/overview/. Acesso em: 02 dez. 2022. 
+⦁	Jquery. Jquery. Disponível em: https://jquery.com/ . Acesso em: 02 dez. 2022
+⦁	DATATABLES. DataTables. Disponível em: https://datatables.net/. Acesso em: 02 dez. 2022.
+⦁	OFICINAS DE ALGORITIMOS COM ESTUDANTES DO SEGUNDO GRAU: UMA PESQUISA AÇÃO. Carlos Eduardo, Dagoberto Melo. Disponível em: https://repositorio.animaeducacao.com.br/bitstream/ANIMA/13748/1/TCC%20-%20Carlos%20e%20Dagoberto.pdf . Acesso em: 02 dez. 2022.
