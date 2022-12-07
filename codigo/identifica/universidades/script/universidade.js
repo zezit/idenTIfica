@@ -12,7 +12,7 @@ function initPage() {
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
 
-  if (storage.length == 0 || storage == null) {
+  if (storage == null || storage.length == 0 ) {
     storage = [];
     localStorage.setItem("universidades", JSON.stringify(data));
     storage = localStorage.getItem("universidades"); // Recupera os dados
@@ -121,7 +121,7 @@ function windowSizeChange() {
 
     var storage = localStorage.getItem("universidades"); // Recupera os dados
     storage = JSON.parse(storage);
-    if (storage.length == 0 || storage == null) {
+    if (storage == null || storage.length == 0 ) {
       storage = [];
     }
   }
@@ -147,7 +147,7 @@ function verMais() {
 
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage.length == 0 || storage == null) {
+  if (storage == null || storage.length == 0 ) {
     storage = [];
   }
 
