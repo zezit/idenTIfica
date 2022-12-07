@@ -12,7 +12,7 @@ function initPage() {
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
 
-  if (storage == null || storage.length == 0 ) {
+  if (storage == null || storage.length == 0) {
     storage = [];
     localStorage.setItem("universidades", JSON.stringify(data));
     storage = localStorage.getItem("universidades"); // Recupera os dados
@@ -121,7 +121,7 @@ function windowSizeChange() {
 
     var storage = localStorage.getItem("universidades"); // Recupera os dados
     storage = JSON.parse(storage);
-    if (storage == null || storage.length == 0 ) {
+    if (storage == null || storage.length == 0) {
       storage = [];
     }
   }
@@ -138,7 +138,7 @@ for (var i = 0; i < elements.length; i++) {
 function verMais() {
   const div =
     document.getElementsByClassName("uni--containers")[0].children[
-      parseInt(this.id) - 1
+      parseInt(this.id)
     ];
 
   div.querySelector(".univ-image img").classList.add("show");
@@ -147,7 +147,7 @@ function verMais() {
 
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage == null || storage.length == 0 ) {
+  if (storage == null || storage.length == 0) {
     storage = [];
   }
 
