@@ -133,7 +133,7 @@ function searchResults(event) {
     found.forEach((element) => {
       listasConjunto += `
       <li class="">
-        <a target="_blank" rel="noopener noreferrer" href="/identifica/${element.page}/${element.page}.html#${element.id}">${element.show}</a>
+        <a target="_blank" rel="noopener noreferrer" href="codigo/identifica/${element.page}/${element.page}.html#${element.id}">${element.show}</a>
       </li>
       `;
       // Todo teste, remover depois
