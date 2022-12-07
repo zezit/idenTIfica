@@ -258,7 +258,8 @@ function addNewItem() {
         id: storage.length,
         nome: "Novo Item",
         link: "",
-        image: "",
+        image:
+          "https://media.istockphoto.com/id/922962354/vector/no-image-available-sign.jpg?b=1&s=170667a&w=0&k=20&c=VqpxaeBt-p0q2JlujQV-0fmCsaD3NeP4mmOUX4uZEIc=",
         descricao: "Insira uma descrição",
         ruf2019: {
           ensino: 1,
