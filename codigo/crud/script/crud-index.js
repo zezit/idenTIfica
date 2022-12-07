@@ -154,7 +154,7 @@ function showUniversidade() {
 
   var storage = localStorage.getItem("universidades"); // Recupera os dados
   storage = JSON.parse(storage);
-  if (storage.length == 0 || storage == null) {
+  if (storage == null) {
     storage = [];
   }
 
