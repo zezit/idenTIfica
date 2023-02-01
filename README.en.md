@@ -4,7 +4,8 @@
   <img width="50%" src="codigo/identifica/imagens/idenTIfica-blue.svg" />
 </p>
 
-[Readme in Portuguese](README.md)
+## Versão em Português
+- [Readme in Portuguese](README.md)
 
 *idenTIfica* is a platform to assist young adults and adults in choosing their IT college course, by analyzing their profile, comparing the curriculum of the courses, and considering the possible job market opportunities. It contains information about various courses and universities, and has a career direction test for those who are undecided.
 
