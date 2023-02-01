@@ -5,7 +5,7 @@
 </p>
 
 ## English Version
-- [English Readme](readme.en.md)
+- [English Readme](README.en.md)
 
 O *idenTIfica* consiste em uma plataforma para auxiliar jovens e adultos na escolha do curso superior na área da Tecnologia da Informação, analisando o perfil do usuário, comparando a grade curricular dos cursos e as possíveis atuações no mercado. Contendo um acervo de informações sobre os diversos cursos e universidades, e a possibilidade de realizar um teste de direcionamento, para os indecisos.
 
